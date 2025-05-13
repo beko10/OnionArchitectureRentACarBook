@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{255E31D2-536A-41F7-8A6B-3155FD1AE35A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4BCD4CBD-9FD6-4B5E-A858-3B7FEC0A9287}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{3995A54E-8A25-431D-8B66-01114075A65C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitectureCarBook.Domain", "Core\OnionArchitectureCarBook.Domain\OnionArchitectureCarBook.Domain.csproj", "{6E328FA2-7B04-4B1D-8D08-9D2FB51CE942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitectureCarBook.Application", "Core\OnionArchitectureCarBook.Application\OnionArchitectureCarBook.Application.csproj", "{40B6AC3E-FB4E-4BCB-9A69-C581C4E6C166}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitectureCarBook.Persistence", "Infrastructure\OnionArchitectureCarBook.Persistence\OnionArchitectureCarBook.Persistence.csproj", "{61C9BB6F-E9D5-419F-8420-2C8B3EE2583F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitectureCarBook.Infrastructure", "Infrastructure\OnionArchitectureCarBook.Infrastructure\OnionArchitectureCarBook.Infrastructure.csproj", "{2F574B17-9964-4351-AA14-9C475D2BC995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitectureCarBook.API", "Presentation\OnionArchitectureCarBook.API\OnionArchitectureCarBook.API.csproj", "{5866E0C2-4DE0-4004-A915-CBD4A755DAF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E328FA2-7B04-4B1D-8D08-9D2FB51CE942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E328FA2-7B04-4B1D-8D08-9D2FB51CE942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E328FA2-7B04-4B1D-8D08-9D2FB51CE942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E328FA2-7B04-4B1D-8D08-9D2FB51CE942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B6AC3E-FB4E-4BCB-9A69-C581C4E6C166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B6AC3E-FB4E-4BCB-9A69-C581C4E6C166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B6AC3E-FB4E-4BCB-9A69-C581C4E6C166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B6AC3E-FB4E-4BCB-9A69-C581C4E6C166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61C9BB6F-E9D5-419F-8420-2C8B3EE2583F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C9BB6F-E9D5-419F-8420-2C8B3EE2583F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C9BB6F-E9D5-419F-8420-2C8B3EE2583F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C9BB6F-E9D5-419F-8420-2C8B3EE2583F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F574B17-9964-4351-AA14-9C475D2BC995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F574B17-9964-4351-AA14-9C475D2BC995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F574B17-9964-4351-AA14-9C475D2BC995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F574B17-9964-4351-AA14-9C475D2BC995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5866E0C2-4DE0-4004-A915-CBD4A755DAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5866E0C2-4DE0-4004-A915-CBD4A755DAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5866E0C2-4DE0-4004-A915-CBD4A755DAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5866E0C2-4DE0-4004-A915-CBD4A755DAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E328FA2-7B04-4B1D-8D08-9D2FB51CE942} = {255E31D2-536A-41F7-8A6B-3155FD1AE35A}
+		{40B6AC3E-FB4E-4BCB-9A69-C581C4E6C166} = {255E31D2-536A-41F7-8A6B-3155FD1AE35A}
+		{61C9BB6F-E9D5-419F-8420-2C8B3EE2583F} = {4BCD4CBD-9FD6-4B5E-A858-3B7FEC0A9287}
+		{2F574B17-9964-4351-AA14-9C475D2BC995} = {4BCD4CBD-9FD6-4B5E-A858-3B7FEC0A9287}
+		{5866E0C2-4DE0-4004-A915-CBD4A755DAF4} = {3995A54E-8A25-431D-8B66-01114075A65C}
+	EndGlobalSection
+EndGlobal
