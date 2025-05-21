@@ -2,7 +2,7 @@
 
 namespace OnionArchitectureCarBook.Domain.Entities;
 
-public sealed class CarDescription:BaseEntity
+public sealed class CarDescription : BaseEntity
 {
     public string Details { get; set; }
 
@@ -13,6 +13,6 @@ public sealed class CarDescription:BaseEntity
     {
         Details = string.Empty;
         CarId = string.Empty;
-        CarId = default!;
+        Car = default!;
     }
 }

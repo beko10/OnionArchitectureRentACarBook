@@ -10,4 +10,12 @@ public sealed class CarPricing : BaseEntity
     public string PricingId { get; set; }
     public Pricing Pricing { get; set; }
 
+    public CarPricing()
+    {
+        CarId = string.Empty;
+        PricingId = string.Empty;
+        Pricing = default!;
+        Car = default!;
+    }
+
 }
