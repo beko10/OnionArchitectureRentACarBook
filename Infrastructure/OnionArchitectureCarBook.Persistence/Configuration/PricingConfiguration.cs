@@ -10,5 +10,11 @@ public sealed class PricingConfiguration : IEntityTypeConfiguration<Pricing>
     {
         builder.ToTable("Pricings");
         builder.Property(p => p.Name).IsRequired().HasMaxLength(100);
+
+        builder.HasData(
+               new Pricing { Id = "P001", Name = "Daily" },
+               new Pricing { Id = "P002", Name = "Weekly" }
+           );
+
     }
 }

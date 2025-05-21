@@ -10,5 +10,11 @@ public sealed class FeatureConfiguration : IEntityTypeConfiguration<Feature>
     {
         builder.ToTable("Features");
         builder.Property(p => p.Name).IsRequired().HasMaxLength(100);
+
+        builder.HasData(
+                new Feature { Id = "F001", Name = "Air Conditioning" },
+                new Feature { Id = "F002", Name = "Bluetooth" }
+            );
+
     }
 }

@@ -16,5 +16,11 @@ public sealed class BrandConfiguration : IEntityTypeConfiguration<Brand>
                .WithOne(c => c.Brand)
                .HasForeignKey(c => c.BrandId)
                .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasData(
+                new Brand { Id = "B001", Name = "Audi" },
+                new Brand { Id = "B002", Name = "BMW" }
+            );
+
     }
 }

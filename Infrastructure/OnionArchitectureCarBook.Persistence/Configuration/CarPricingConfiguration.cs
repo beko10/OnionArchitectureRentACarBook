@@ -21,5 +21,11 @@ public sealed class CarPricingConfiguration : IEntityTypeConfiguration<CarPricin
         builder.HasOne(p => p.Pricing)
                .WithMany(pr => pr.CarPricings)
                .HasForeignKey(p => p.PricingId);
+
+        builder.HasData(
+               new CarPricing { Id = "CP001", CarId = "CAR001", PricingId = "P001", Amount = 95.00m },
+               new CarPricing { Id = "CP002", CarId = "CAR001", PricingId = "P002", Amount = 550.00m }
+           );
+
     }
 }

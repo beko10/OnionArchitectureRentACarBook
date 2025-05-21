@@ -10,5 +10,11 @@ public sealed class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {
         builder.ToTable("Categories");
         builder.Property(p => p.Name).IsRequired().HasMaxLength(100);
+
+        builder.HasData(
+                new Category { Id = "C001", Name = "Sedan" },
+                new Category { Id = "C002", Name = "SUV" }
+            );
+
     }
 }

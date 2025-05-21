@@ -19,5 +19,11 @@ public sealed class CarFeatureConfiguration : IEntityTypeConfiguration<CarFeatur
         builder.HasOne(p => p.Feature)
                .WithMany(f => f.CarFeatures)
                .HasForeignKey(p => p.FeatureId);
+
+        builder.Entity<CarFeature>().HasData(
+                new CarFeature { Id = "CF001", CarId = "CAR001", FeatureId = "F001", Available = true },
+                new CarFeature { Id = "CF002", CarId = "CAR001", FeatureId = "F002", Available = true }
+            );
+
     }
 }

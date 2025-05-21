@@ -13,5 +13,17 @@ public sealed class TestimonialConfiguration : IEntityTypeConfiguration<Testimon
         builder.Property(p => p.Title).HasMaxLength(100);
         builder.Property(p => p.Comment).IsRequired().HasMaxLength(1000);
         builder.Property(p => p.ImageUrl).HasMaxLength(300);
+
+
+        builder.HasData(
+               new Testimonial
+               {
+                   Id = "TST001",
+                   Name = "John Doe",
+                   Title = "Frequent Traveler",
+                   Comment = "Smooth booking process and very clean cars. Highly recommend!",
+                   ImageUrl = "/images/testimonials/john.jpg"
+               }
+           );
     }
 }

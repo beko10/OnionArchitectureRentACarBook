@@ -14,5 +14,14 @@ public sealed class CarDescriptionConfiguration : IEntityTypeConfiguration<CarDe
         builder.HasOne(p => p.Car)
                .WithMany(c => c.CarDescriptions)
                .HasForeignKey(p => p.CarId);
+
+        builder.HasData(
+                new CarDescription
+                {
+                    Id = "CD001",
+                    CarId = "CAR001",
+                    Details = "Comfortable compact executive sedan with modern infotainment and safety features."
+                }
+            );
     }
 }

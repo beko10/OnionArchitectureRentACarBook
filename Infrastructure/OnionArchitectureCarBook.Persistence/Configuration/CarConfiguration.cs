@@ -32,5 +32,22 @@ public sealed class CarConfiguration : IEntityTypeConfiguration<Car>
         builder.HasMany(p => p.CarPricings)
                .WithOne(cp => cp.Car)
                .HasForeignKey(cp => cp.CarId);
+
+
+        builder.HasData(
+                new Car
+                {
+                    Id = "CAR001",
+                    Model = "A4",
+                    CoverImageUrl = "/images/cars/audi-a4-cover.jpg",
+                    BigImageUrl = "/images/cars/audi-a4-big.jpg",
+                    Km = 25000,
+                    Transmission = "Automatic",
+                    Seat = 5,
+                    Luggage = 4,
+                    CarFuelType = "Petrol",
+                    BrandId = "B001"
+                }
+            );
     }
 }

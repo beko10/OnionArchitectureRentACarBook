@@ -18,5 +18,17 @@ public sealed class ContactConfiguration : IEntityTypeConfiguration<Contact>
         builder.Property(p => p.SendDate)
                .IsRequired()
                .HasDefaultValueSql("GETDATE()");
+
+        builder.HasData(
+               new Contact
+               {
+                   Id = "CT001",
+                   Name = "Demo User",
+                   Email = "demo@carbook.com",
+                   Subject = "Sample inquiry",
+                   Message = "How much would it cost to rent an Audi A4 for a week?",
+                   SendDate = new DateTime(2025, 5, 1)
+               }
+           );
     }
 }

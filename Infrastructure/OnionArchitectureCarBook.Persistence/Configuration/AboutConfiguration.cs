@@ -19,5 +19,16 @@ public sealed class AboutConfiguration : IEntityTypeConfiguration<About>
 
         builder.Property(p => p.ImageUrl)
                .HasMaxLength(300);
+
+
+        builder.HasData(
+                new About
+                {
+                    Id = "AB001",
+                    Title = "Welcome to CarBook",
+                    Description = "Premium car rental platform with a wide selection of vehicles and 24/7 support.",
+                    ImageUrl = "/images/about/about_us.jpg"
+                }
+            );
     }
 }
