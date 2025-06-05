@@ -51,26 +51,26 @@ public class EfCoreWriteRepository<TEntity> : IWriteRepository<TEntity> where TE
         return Task.CompletedTask;
     }
 
-    public Task SoftRemoveAsync(TEntity entity, CancellationToken cancellationToken = default)
-    {
-        entity.SoftDeletedDate = DateTime.UtcNow;
-        entity.IsDeleted = true;
-        _dbSet.Update(entity);
-        return Task.CompletedTask;
-    }
+    //public Task SoftRemoveAsync(TEntity entity, CancellationToken cancellationToken = default)
+    //{
+    //    entity.SoftDeletedDate = DateTime.UtcNow;
+    //    entity.IsDeleted = true;
+    //    _dbSet.Update(entity);
+    //    return Task.CompletedTask;
+    //}
 
-    public async Task<bool> SoftRemoveIdAsync(string id, CancellationToken cancellationToken = default)
-    {
-        var hasEntity = await _dbSet.FindAsync(id, cancellationToken);
-        if (hasEntity != null)
-        {
-            hasEntity.SoftDeletedDate = DateTime.UtcNow;
-            hasEntity.IsDeleted = true;
-            _dbSet.Update(hasEntity);
-            return true;
-        }
-        return false;
-    }
+    //public async Task<bool> SoftRemoveIdAsync(string id, CancellationToken cancellationToken = default)
+    //{
+    //    var hasEntity = await _dbSet.FindAsync(id, cancellationToken);
+    //    if (hasEntity != null)
+    //    {
+    //        hasEntity.SoftDeletedDate = DateTime.UtcNow;
+    //        hasEntity.IsDeleted = true;
+    //        _dbSet.Update(hasEntity);
+    //        return true;
+    //    }
+    //    return false;
+    //}
 
     public Task UpdateAsync(TEntity entity, CancellationToken cancellationToken = default)
     {
