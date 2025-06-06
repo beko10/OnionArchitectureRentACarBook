@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Domain.Entities;
+﻿using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Repositories.LocationRepository;
+namespace OnionArchitectureRentACarBook.Application.Repositories.LocationRepository;
 
 public interface ILocationWriteRepository : IWriteRepository<Location>
 {

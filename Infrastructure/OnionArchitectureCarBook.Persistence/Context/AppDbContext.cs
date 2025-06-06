@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OnionArchitectureCarBook.Domain.Common;
-using OnionArchitectureCarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Domain.Common;
+using OnionArchitectureRentACarBook.Domain.Entities;
 using System.Reflection;
 
-namespace OnionArchitectureCarBook.Persistence.Context;
+namespace OnionArchitectureRentACarBook.Persistence.Context;
 
 public sealed class AppDbContext : DbContext
 {

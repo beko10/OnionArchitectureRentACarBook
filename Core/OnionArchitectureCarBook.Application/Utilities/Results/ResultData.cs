@@ -1,4 +1,4 @@
-﻿using OnionArchitectureCarBook.Application.Utilities.Results;
+﻿using OnionArchitectureRentACarBook.Application.Utilities.Results;
 
 public sealed class ResultData<TData> : Result
 {

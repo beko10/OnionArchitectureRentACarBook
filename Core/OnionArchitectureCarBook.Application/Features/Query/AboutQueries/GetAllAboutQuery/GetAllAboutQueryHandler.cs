@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using MediatR;
-using OnionArchitectureCarBook.Application.Common.Messages;
-using OnionArchitectureCarBook.Application.DTOs.About;
-using OnionArchitectureCarBook.Application.Repositories.AboutRepository;
+using OnionArchitectureRentACarBook.Application.Common.Messages;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
 
-namespace OnionArchitectureCarBook.Application.Features.Query.AboutQueries.GetAllAboutQuery;
+namespace OnionArchitectureRentACarBook.Application.Features.Query.AboutQueries.GetAllAboutQuery;
 
 public class GetAllAboutQueryHandler : IRequestHandler<GetAllAboutQueryRequest, GetAllAboutQueryResponse>
 {

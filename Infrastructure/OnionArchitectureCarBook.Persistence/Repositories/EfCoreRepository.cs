@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
-using OnionArchitectureCarBook.Application.Repositories;
-using OnionArchitectureCarBook.Domain.Common;
+using OnionArchitectureRentACarBook.Application.Repositories;
+using OnionArchitectureRentACarBook.Domain.Common;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories;
 
 public class EfCoreRepository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
 {

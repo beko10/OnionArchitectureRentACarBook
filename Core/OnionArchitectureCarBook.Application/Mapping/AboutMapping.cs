@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using OnionArchitectureCarBook.Application.DTOs.About;
-using OnionArchitectureCarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Mapping;
+namespace OnionArchitectureRentACarBook.Application.Mapping;
 
 public class AboutMapping : Profile 
 {

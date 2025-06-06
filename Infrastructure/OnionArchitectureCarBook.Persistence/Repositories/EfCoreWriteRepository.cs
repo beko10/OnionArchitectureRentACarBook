@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OnionArchitectureCarBook.Application.Repositories;
-using OnionArchitectureCarBook.Domain.Common;
-using OnionArchitectureCarBook.Persistence.Context;
+using OnionArchitectureRentACarBook.Application.Repositories;
+using OnionArchitectureRentACarBook.Domain.Common;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories;
 
 public class EfCoreWriteRepository<TEntity> : IWriteRepository<TEntity> where TEntity : BaseEntity
 {

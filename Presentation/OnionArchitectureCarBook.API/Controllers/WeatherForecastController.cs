@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using OnionArchitectureRentACarBook.API;
 
-namespace OnionArchitectureCarBook.API.Controllers
+namespace OnionArchitectureRentACarBook.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

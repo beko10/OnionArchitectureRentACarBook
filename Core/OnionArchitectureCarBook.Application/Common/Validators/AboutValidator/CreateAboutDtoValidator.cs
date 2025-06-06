@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
-using OnionArchitectureCarBook.Application.DTOs.About;
-using OnionArchitectureCarBook.Application.Common.Messages; // Eklendi
+using OnionArchitectureRentACarBook.Application.Common.Messages;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDto; // Eklendi
 
-namespace OnionArchitectureCarBook.Application.Common.Validators.AboutValidator;
+namespace OnionArchitectureRentACarBook.Application.Common.Validators.AboutValidator;
 
 public class CreateAboutDtoValidator : AbstractValidator<CreateAboutDto>
 {

@@ -1,4 +1,4 @@
-﻿namespace OnionArchitectureCarBook.Application.UnitOfWork;
+﻿namespace OnionArchitectureRentACarBook.Application.UnitOfWork;
 
 public interface IUnitOfWork : IAsyncDisposable
 {

@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Pagination;
-using OnionArchitectureCarBook.Domain.Common;
+﻿using OnionArchitectureRentACarBook.Application.Pagination;
+using OnionArchitectureRentACarBook.Domain.Common;
 using System.Linq.Expressions;
 
-namespace OnionArchitectureCarBook.Application.Repositories;
+namespace OnionArchitectureRentACarBook.Application.Repositories;
 
 public interface IReadRepository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
 {

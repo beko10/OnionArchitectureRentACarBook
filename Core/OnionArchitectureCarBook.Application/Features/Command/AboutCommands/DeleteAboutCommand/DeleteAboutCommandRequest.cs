@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace OnionArchitectureCarBook.Application.Features.Command.AboutCommands.DeleteAboutCommand;
+namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutCommands.DeleteAboutCommand;
 
 public class DeleteAboutCommandRequest : IRequest<DeleteAboutCommandResponse>
 {

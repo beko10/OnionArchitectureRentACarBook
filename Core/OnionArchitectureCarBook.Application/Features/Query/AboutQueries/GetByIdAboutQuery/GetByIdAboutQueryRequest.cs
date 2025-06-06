@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace OnionArchitectureCarBook.Application.Features.Query.AboutQueries.GetByIdAboutQuery;
+namespace OnionArchitectureRentACarBook.Application.Features.Query.AboutQueries.GetByIdAboutQuery;
 
 public class GetByIdAboutQueryRequest : IRequest<GetByIdAboutQueryResponse>
 {

@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OnionArchitectureCarBook.Application.Repositories.AboutRepository;
-using OnionArchitectureCarBook.Application.UnitOfWork;
-using OnionArchitectureCarBook.Persistence.Context;
-using OnionArchitectureCarBook.Persistence.Repositories.EfCoreAboutRepository;
+using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
+using OnionArchitectureRentACarBook.Application.UnitOfWork;
+using OnionArchitectureRentACarBook.Persistence.Context;
+using OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreAboutRepository;
 
-namespace OnionArchitectureCarBook.Persistence;
+namespace OnionArchitectureRentACarBook.Persistence;
 
 public static class ServicesRegistration
 {

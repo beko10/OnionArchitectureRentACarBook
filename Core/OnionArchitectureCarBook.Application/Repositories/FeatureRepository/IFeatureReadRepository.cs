@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Domain.Entities;
+﻿using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Repositories.FeatureRepository;
+namespace OnionArchitectureRentACarBook.Application.Repositories.FeatureRepository;
 
 public interface IFeatureReadRepository : IReadRepository<Feature>
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace OnionArchitectureCarBook.Application;
+namespace OnionArchitectureRentACarBook.Application;
 
 public static class ServiceRegistration
 {

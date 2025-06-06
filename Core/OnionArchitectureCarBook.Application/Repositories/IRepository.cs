@@ -1,7 +1,6 @@
-﻿
-using OnionArchitectureCarBook.Domain.Common;
+﻿using OnionArchitectureRentACarBook.Domain.Common;
 
-namespace OnionArchitectureCarBook.Application.Repositories;
+namespace OnionArchitectureRentACarBook.Application.Repositories;
 
 public interface IRepository<TEntity> where TEntity : BaseEntity
 {

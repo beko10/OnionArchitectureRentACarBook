@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.ServiceRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.ServiceRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreServiceRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreServiceRepository;
 
 public class EfCoreServiceReadRepository : EfCoreReadRepository<Service>, IServiceReadRepository
 {

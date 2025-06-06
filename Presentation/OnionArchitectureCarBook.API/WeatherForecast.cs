@@ -1,4 +1,4 @@
-namespace OnionArchitectureCarBook.API
+namespace OnionArchitectureRentACarBook.API
 {
     public class WeatherForecast
     {

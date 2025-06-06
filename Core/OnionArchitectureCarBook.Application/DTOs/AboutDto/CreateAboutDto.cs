@@ -1,4 +1,4 @@
-﻿namespace OnionArchitectureCarBook.Application.DTOs.About;
+﻿namespace OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
 
 public class CreateAboutDto
 {

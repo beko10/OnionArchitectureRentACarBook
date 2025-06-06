@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.FooterAdressRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.FooterAdressRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreFooterAdressRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreFooterAdressRepository;
 
 public class EfCoreFooterAdressReadRepository : EfCoreReadRepository<FooterAdress>, IFooterAdressReadRepository
 {

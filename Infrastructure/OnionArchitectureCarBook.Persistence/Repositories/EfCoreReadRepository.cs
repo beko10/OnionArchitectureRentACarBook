@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OnionArchitectureCarBook.Application.Pagination;
-using OnionArchitectureCarBook.Application.Repositories;
-using OnionArchitectureCarBook.Domain.Common;
-using OnionArchitectureCarBook.Persistence.Context;
+using OnionArchitectureRentACarBook.Application.Pagination;
+using OnionArchitectureRentACarBook.Application.Repositories;
+using OnionArchitectureRentACarBook.Domain.Common;
+using OnionArchitectureRentACarBook.Persistence.Context;
 using System.Linq.Expressions;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories;
 
 public class EfCoreReadRepository<TEntity> : IReadRepository<TEntity> where TEntity : BaseEntity
 {

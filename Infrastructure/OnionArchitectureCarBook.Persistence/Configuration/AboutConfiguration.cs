@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
-using OnionArchitectureCarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Domain.Entities;
 
 public sealed class AboutConfiguration : IEntityTypeConfiguration<About>
 {

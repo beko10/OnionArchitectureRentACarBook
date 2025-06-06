@@ -1,9 +1,9 @@
 ﻿using OnionArchitectureCarBook.Application.Repositories.CarFeatureRepository;
-using OnionArchitectureCarBook.Application.Repositories.CarPricingRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+using OnionArchitectureRentACarBook.Application.Repositories.CarPricingRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreCarPricingRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreCarPricingRepository;
 
 public class EfCoreCarPricingWriteRepository : EfCoreWriteRepository<CarPricing>, ICarPricingWriteRepository
 {

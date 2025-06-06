@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.BannerRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.BannerRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreBannerRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreBannerRepository;
 
 public class EfCoreBannerWriteRepository : EfCoreWriteRepository<Banner>, IBannerWriteRepository
 {

@@ -1,7 +1,7 @@
-﻿using OnionArchitectureCarBook.Domain.Common;
+﻿using OnionArchitectureRentACarBook.Domain.Common;
 using System.Linq.Expressions;
 
-namespace OnionArchitectureCarBook.Application.Repositories;
+namespace OnionArchitectureRentACarBook.Application.Repositories;
 
 public interface IWriteRepository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
 {

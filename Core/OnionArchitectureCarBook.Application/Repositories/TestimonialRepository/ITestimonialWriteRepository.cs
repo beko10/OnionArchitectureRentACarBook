@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Domain.Entities;
+﻿using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Repositories.TestimonialRepository;
+namespace OnionArchitectureRentACarBook.Application.Repositories.TestimonialRepository;
 
 public interface ITestimonialWriteRepository : IWriteRepository<Testimonial>
 {

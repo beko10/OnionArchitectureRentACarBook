@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using OnionArchitectureCarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Persistence.Configurations;
+namespace OnionArchitectureRentACarBook.Persistence.Configuration;
 
 public sealed class BrandConfiguration : IEntityTypeConfiguration<Brand>
 {

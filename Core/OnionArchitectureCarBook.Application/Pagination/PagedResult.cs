@@ -1,4 +1,4 @@
-﻿namespace OnionArchitectureCarBook.Application.Pagination;
+﻿namespace OnionArchitectureRentACarBook.Application.Pagination;
 
 public class PagedResult<T>
 {

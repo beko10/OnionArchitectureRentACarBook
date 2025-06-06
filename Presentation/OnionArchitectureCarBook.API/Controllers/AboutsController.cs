@@ -5,7 +5,7 @@ using OnionArchitectureCarBook.Application.DTOs.About;
 using OnionArchitectureCarBook.Application.Features.Query.AboutQueries.GetAllAboutQuery;
 using System.Threading.Tasks;
 
-namespace OnionArchitectureCarBook.API.Controllers;
+namespace OnionArchitectureRentACarBook.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

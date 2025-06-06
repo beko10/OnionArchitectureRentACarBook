@@ -1,4 +1,4 @@
-﻿namespace OnionArchitectureCarBook.Application.Utilities.Results;
+﻿namespace OnionArchitectureRentACarBook.Application.Utilities.Results;
 
 public  class Result
 {

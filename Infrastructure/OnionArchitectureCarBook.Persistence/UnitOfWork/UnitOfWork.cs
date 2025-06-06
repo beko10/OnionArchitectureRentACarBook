@@ -1,7 +1,7 @@
-﻿using OnionArchitectureCarBook.Application.UnitOfWork;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.UnitOfWork;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.UnitOfWork;
+namespace OnionArchitectureRentACarBook.Persistence.UnitOfWork;
 
 public class UnitOfWork : IUnitOfWork
 {

@@ -1,7 +1,7 @@
 ﻿using MediatR;
-using OnionArchitectureCarBook.Application.DTOs.About;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
 
-namespace OnionArchitectureCarBook.Application.Features.Command.AboutCommands.UpdateAboutCommand;
+namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutCommands.UpdateAboutCommand;
 
 public class UpdateAboutCommandRequest : IRequest<UpdateAboutCommandResponse>
 {

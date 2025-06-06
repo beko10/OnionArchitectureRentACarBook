@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Domain.Entities;
+﻿using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Repositories.SocialMediaRepository;
+namespace OnionArchitectureRentACarBook.Application.Repositories.SocialMediaRepository;
 
 public interface ISocialMediaWriteRepository : IWriteRepository<SocialMedia>
 {

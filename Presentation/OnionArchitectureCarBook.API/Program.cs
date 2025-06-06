@@ -1,5 +1,5 @@
-using OnionArchitectureCarBook.Application;
-using OnionArchitectureCarBook.Persistence;
+using OnionArchitectureRentACarBook.Application;
+using OnionArchitectureRentACarBook.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 

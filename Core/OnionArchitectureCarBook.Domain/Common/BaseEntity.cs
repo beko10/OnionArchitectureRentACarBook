@@ -1,4 +1,4 @@
-﻿namespace OnionArchitectureCarBook.Domain.Common;
+﻿namespace OnionArchitectureRentACarBook.Domain.Common;
 
 public abstract class BaseEntity
 {

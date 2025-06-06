@@ -1,8 +1,8 @@
 ﻿
 using MediatR;
-using OnionArchitectureCarBook.Application.DTOs.About;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
 
-namespace OnionArchitectureCarBook.Application.Features.Command.AboutCommands.CreateAboutCommand;
+namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutCommands.CreateAboutCommand;
 
 public class CreateAboutCommandRequest : IRequest<CreateAboutCommandResponse>
 {

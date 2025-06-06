@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Domain.Entities;
+﻿using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Repositories.BrandRepository;
+namespace OnionArchitectureRentACarBook.Application.Repositories.BrandRepository;
 
 public interface IBrandReadRepository : IReadRepository<Brand>
 {

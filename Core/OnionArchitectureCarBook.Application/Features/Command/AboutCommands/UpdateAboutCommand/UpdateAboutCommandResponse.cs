@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Application.Utilities.Results;
+﻿using OnionArchitectureRentACarBook.Application.Utilities.Results;
 
-namespace OnionArchitectureCarBook.Application.Features.Command.AboutCommands.UpdateAboutCommand;
+namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutCommands.UpdateAboutCommand;
 
 public class UpdateAboutCommandResponse 
 {

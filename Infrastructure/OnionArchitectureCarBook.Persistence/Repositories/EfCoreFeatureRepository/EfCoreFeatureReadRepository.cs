@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.FeatureRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.FeatureRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreFeatureRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreFeatureRepository;
 
 public class EfCoreFeatureReadRepository : EfCoreReadRepository<Feature>, IFeatureReadRepository
 {

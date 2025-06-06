@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.CategoryRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.CategoryRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreCategoryRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreCategoryRepository;
 
 public class EfCoreCategoryWriteRepository : EfCoreWriteRepository<Category>, ICategoryWriteRepository
 {

@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using MediatR;
-using OnionArchitectureCarBook.Application.Common.Messages;
-using OnionArchitectureCarBook.Application.DTOs.About;
-using OnionArchitectureCarBook.Application.Repositories.AboutRepository;
-using OnionArchitectureCarBook.Application.UnitOfWork;
-using OnionArchitectureCarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Application.Common.Messages;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
+using OnionArchitectureRentACarBook.Application.UnitOfWork;
+using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Features.Command.AboutCommands.CreateAboutCommand;
+namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutCommands.CreateAboutCommand;
 
 public class CreateAboutCommandHandler : IRequestHandler<CreateAboutCommandRequest, CreateAboutCommandResponse>
 {

@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.AboutRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreAboutRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreAboutRepository;
 
 public class EfCoreAboutWriteRepository : EfCoreWriteRepository<About>, IAboutWriteRepository
 {

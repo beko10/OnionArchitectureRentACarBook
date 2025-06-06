@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.LocationRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.LocationRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreLocationRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreLocationRepository;
 
 public class EfCoreLocationReadRepository : EfCoreReadRepository<Location>, ILocationReadRepository
 {

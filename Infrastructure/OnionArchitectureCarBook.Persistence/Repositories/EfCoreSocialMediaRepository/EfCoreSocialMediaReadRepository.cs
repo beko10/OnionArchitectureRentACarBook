@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.SocialMediaRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.SocialMediaRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreSocialMediaRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreSocialMediaRepository;
 
 public class EfCoreSocialMediaReadRepository : EfCoreReadRepository<SocialMedia>, ISocialMediaReadRepository
 {

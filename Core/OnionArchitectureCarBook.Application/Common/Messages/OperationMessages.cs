@@ -1,4 +1,4 @@
-﻿namespace OnionArchitectureCarBook.Application.Common.Messages;
+﻿namespace OnionArchitectureRentACarBook.Application.Common.Messages;
 
 public static class OperationMessages
 {

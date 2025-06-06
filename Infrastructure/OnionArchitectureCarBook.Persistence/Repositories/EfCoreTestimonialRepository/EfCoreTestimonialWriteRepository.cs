@@ -1,8 +1,8 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.TestimonialRepository;
-using OnionArchitectureCarBook.Domain.Entities;
-using OnionArchitectureCarBook.Persistence.Context;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.TestimonialRepository;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using OnionArchitectureRentACarBook.Persistence.Context;
 
-namespace OnionArchitectureCarBook.Persistence.Repositories.EfCoreTestimonialRepository;
+namespace OnionArchitectureRentACarBook.Persistence.Repositories.EfCoreTestimonialRepository;
 
 public class EfCoreTestimonialWriteRepository : EfCoreWriteRepository<Testimonial>, ITestimonialWriteRepository
 {

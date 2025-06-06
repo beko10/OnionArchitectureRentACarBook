@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Domain.Entities;
+﻿using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Repositories.CarRepository;
+namespace OnionArchitectureRentACarBook.Application.Repositories.CarRepository;
 
 public interface ICarWriteRepository : IWriteRepository<Car>
 {

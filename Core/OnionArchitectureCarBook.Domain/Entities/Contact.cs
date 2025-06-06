@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Domain.Common;
+﻿using OnionArchitectureRentACarBook.Domain.Common;
 
-namespace OnionArchitectureCarBook.Domain.Entities;
+namespace OnionArchitectureRentACarBook.Domain.Entities;
 
 public sealed class Contact : BaseEntity
 {

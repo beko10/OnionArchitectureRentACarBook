@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Domain.Entities;
+﻿using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Repositories.BannerRepository;
+namespace OnionArchitectureRentACarBook.Application.Repositories.BannerRepository;
 
 public interface IBannerReadRepository : IReadRepository<Banner>
 {

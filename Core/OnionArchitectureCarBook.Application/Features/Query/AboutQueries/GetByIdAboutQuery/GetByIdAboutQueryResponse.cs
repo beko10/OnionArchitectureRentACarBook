@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Application.DTOs.About;
+﻿using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
 
-namespace OnionArchitectureCarBook.Application.Features.Query.AboutQueries.GetByIdAboutQuery;
+namespace OnionArchitectureRentACarBook.Application.Features.Query.AboutQueries.GetByIdAboutQuery;
 
 public class GetByIdAboutQueryResponse
 {

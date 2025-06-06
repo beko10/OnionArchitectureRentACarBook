@@ -1,6 +1,6 @@
-﻿using OnionArchitectureCarBook.Domain.Entities;
+﻿using OnionArchitectureRentACarBook.Domain.Entities;
 
-namespace OnionArchitectureCarBook.Application.Repositories.ContactRepository;
+namespace OnionArchitectureRentACarBook.Application.Repositories.ContactRepository;
 
 public interface IContactReadRepository : IReadRepository<Contact>
 {

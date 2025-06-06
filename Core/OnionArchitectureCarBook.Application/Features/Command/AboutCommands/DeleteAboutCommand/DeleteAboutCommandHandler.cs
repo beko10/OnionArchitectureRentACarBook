@@ -1,10 +1,10 @@
 ﻿using MediatR;
-using OnionArchitectureCarBook.Application.Common.Messages;
-using OnionArchitectureCarBook.Application.Repositories.AboutRepository;
-using OnionArchitectureCarBook.Application.UnitOfWork;
-using OnionArchitectureCarBook.Application.Utilities.Results;
+using OnionArchitectureRentACarBook.Application.Common.Messages;
+using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
+using OnionArchitectureRentACarBook.Application.UnitOfWork;
+using OnionArchitectureRentACarBook.Application.Utilities.Results;
 
-namespace OnionArchitectureCarBook.Application.Features.Command.AboutCommands.DeleteAboutCommand;
+namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutCommands.DeleteAboutCommand;
 
 public class DeleteAboutCommandHandler : IRequestHandler<DeleteAboutCommandRequest,DeleteAboutCommandResponse>
 {
