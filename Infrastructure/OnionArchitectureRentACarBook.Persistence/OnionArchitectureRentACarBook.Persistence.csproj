@@ -19,8 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\OnionArchitectureCarBook.Application\OnionArchitectureRentACarBook.Application.csproj" />
-    <ProjectReference Include="..\..\Core\OnionArchitectureCarBook.Domain\OnionArchitectureRentACarBook.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\OnionArchitectureRentACarBook.Application\OnionArchitectureRentACarBook.Application.csproj" />
   </ItemGroup>
 
 </Project>

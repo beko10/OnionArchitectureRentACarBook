@@ -1,9 +1,6 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using OnionArchitectureCarBook.Application.DTOs.About;
-using OnionArchitectureCarBook.Application.Features.Query.AboutQueries.GetAllAboutQuery;
-using System.Threading.Tasks;
+using OnionArchitectureRentACarBook.Application.Features.Query.AboutQueries.GetAllAboutQuery;
 
 namespace OnionArchitectureRentACarBook.API.Controllers;
 

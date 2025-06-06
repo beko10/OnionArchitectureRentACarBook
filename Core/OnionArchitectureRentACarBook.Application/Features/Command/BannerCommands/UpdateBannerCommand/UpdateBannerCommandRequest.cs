@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using OnionArchitectureCarBook.Application.DTOs.BannerDto;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Command.BannerCommands.UpdateBannerCommand;
 

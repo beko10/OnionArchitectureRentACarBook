@@ -13,7 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnionArchitectureCarBook.Domain\OnionArchitectureCarBook.Domain.csproj" />
+    <ProjectReference Include="..\OnionArchitectureRentACarBook.Domain\OnionArchitectureRentACarBook.Domain.csproj" />
   </ItemGroup>
+
+
+
 
 </Project>

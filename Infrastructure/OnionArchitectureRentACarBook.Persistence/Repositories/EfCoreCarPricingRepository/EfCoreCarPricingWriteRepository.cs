@@ -1,5 +1,4 @@
-﻿using OnionArchitectureCarBook.Application.Repositories.CarFeatureRepository;
-using OnionArchitectureRentACarBook.Application.Repositories.CarPricingRepository;
+﻿using OnionArchitectureRentACarBook.Application.Repositories.CarPricingRepository;
 using OnionArchitectureRentACarBook.Domain.Entities;
 using OnionArchitectureRentACarBook.Persistence.Context;
 
