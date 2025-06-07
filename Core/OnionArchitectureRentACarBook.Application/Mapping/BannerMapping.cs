@@ -9,7 +9,7 @@ public class BannerMapping : Profile
     public BannerMapping()
     {
         CreateMap<CreateBannerCommandDto,Banner>().ReverseMap();
-        CreateMap<UpdateBannerCommandDto,Banner>().ReverseMap();
+        CreateMap<UpdateBannerCommandDtoValidator,Banner>().ReverseMap();
         CreateMap<BannerQueryDto,Banner>().ReverseMap();
     }
 }
