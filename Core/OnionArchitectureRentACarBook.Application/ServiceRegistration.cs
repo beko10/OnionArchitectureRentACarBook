@@ -1,4 +1,9 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentValidation;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using OnionArchitectureRentACarBook.Application.Common.Behaviors;
+using OnionArchitectureRentACarBook.Domain.Entities;
+using System.Reflection;
 
 namespace OnionArchitectureRentACarBook.Application;
 
@@ -6,11 +11,14 @@ public static class ServiceRegistration
 {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services)
     {
-        // Register MediatR for handling commands and queries
-        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ServiceRegistration).Assembly));
-        // Register AutoMapper for object mapping
+        services.AddMediatR(cfg => {
+            cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+            cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>));
+        });
+
         services.AddAutoMapper(typeof(ServiceRegistration));
-        // Register other application services here as needed
+
+        services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
         return services;
     }
