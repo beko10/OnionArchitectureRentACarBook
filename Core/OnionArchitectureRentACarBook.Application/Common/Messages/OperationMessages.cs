@@ -54,4 +54,31 @@ public static class OperationMessages
         public const string GetAllEmpty = "Henüz banner bilgisi bulunmamaktadır.";
     }
 
+    public static class BrandOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Brand bilgisi başarıyla oluşturuldu.";
+        public const string CreateFailed = "Brand bilgisi oluşturulurken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Brand bilgisi oluşturulurken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Brand bilgisi başarıyla güncellendi.";
+        public const string UpdateFailed = "Brand bilgisi güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Brand bilgisi güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek brand bilgisi bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Brand bilgisi başarıyla silindi.";
+        public const string DeleteFailed = "Brand bilgisi silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Brand bilgisi silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek brand bilgisi bulunamadı.";
+
+        // Get Messages
+        public const string GetSuccess = "Brand bilgisi başarıyla getirildi.";
+        public const string GetNotFound = "Brand bilgisi bulunamadı.";
+        public const string GetAllSuccess = "Brand bilgileri başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz brand bilgisi bulunmamaktadır.";
+    }
+
+
 }
