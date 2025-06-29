@@ -22,7 +22,7 @@ public class CreateBrandCommandHandler : IRequestHandler<CreateBrandCommandReque
 
     public async Task<CreateBrandCommandResponse> Handle(CreateBrandCommandRequest request, CancellationToken cancellationToken)
     {
-        if(request.CreateBrandCommandDto == null)
+        if(request.CreateBrandCommandDtoRequest == null)
         {
             return new CreateBrandCommandResponse
             {
@@ -30,7 +30,7 @@ public class CreateBrandCommandHandler : IRequestHandler<CreateBrandCommandReque
             };
         }
 
-        var addedBrand = _mapper.Map<Brand>(request.CreateBrandCommandDto);
+        var addedBrand = _mapper.Map<Brand>(request.CreateBrandCommandDtoRequest);
         await _brandWriteRepository.AddAsync(entity : addedBrand,cancellationToken:cancellationToken);
         await _unitOfWork.SaveAsync();
         return new CreateBrandCommandResponse

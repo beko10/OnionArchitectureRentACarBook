@@ -22,7 +22,7 @@ public class CreateBannerCommandHandler : IRequestHandler<CreateBannerCommandReq
 
     public async Task<CreateBannerCommandResponse> Handle(CreateBannerCommandRequest request, CancellationToken cancellationToken)
     {
-        var createdBannerMapped = _mapper.Map<Banner>(request.CreateBannerCommandDto);
+        var createdBannerMapped = _mapper.Map<Banner>(request.CreateBannerCommandDtoRequest);
         await _bannerWriteRepository.AddAsync(entity:createdBannerMapped,cancellationToken:cancellationToken);
         await _unitOfWork.SaveAsync();
         return new CreateBannerCommandResponse

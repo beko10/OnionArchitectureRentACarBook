@@ -5,5 +5,4 @@ namespace OnionArchitectureRentACarBook.Application.Features.Command.BrandComman
 public class UpdateBrandCommandRequest : IRequest<UpdateBrandCommandResponse>
 {
     public string Id { get; set; } = string.Empty;
-    public string Name { get; set; } = string.Empty;
 }

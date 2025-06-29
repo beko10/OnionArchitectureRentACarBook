@@ -17,6 +17,10 @@
     <ProjectReference Include="..\OnionArchitectureRentACarBook.Domain\OnionArchitectureRentACarBook.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="DTOs\CarDto\CreateCarCommandDto.cs" />
+  </ItemGroup>
+
 
 
 

@@ -25,8 +25,8 @@ public class CreateAboutCommandHandler : IRequestHandler<CreateAboutCommandReque
 
     public async Task<CreateAboutCommandResponse> Handle(CreateAboutCommandRequest request, CancellationToken cancellationToken)
     {
-        await _aboutBusinessRuleService.CreateAboutBusineesRuleCheck(request.CreateAboutDto);
-        var addedAboutMapping =  _mapper.Map<About>(request.CreateAboutDto);
+        await _aboutBusinessRuleService.CreateAboutBusineesRuleCheck(request.CreateAboutDtoRequest);
+        var addedAboutMapping =  _mapper.Map<About>(request.CreateAboutDtoRequest);
         await _aboutWriteRepository.AddAsync(addedAboutMapping);
         await _unitOfWork.SaveAsync();
         var aboutDto = _mapper.Map<CreateAboutDto>(addedAboutMapping);

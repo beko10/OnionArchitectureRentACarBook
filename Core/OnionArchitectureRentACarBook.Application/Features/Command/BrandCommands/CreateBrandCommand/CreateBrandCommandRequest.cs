@@ -5,5 +5,5 @@ namespace OnionArchitectureRentACarBook.Application.Features.Command.BrandComman
 
 public class CreateBrandCommandRequest : IRequest<CreateBrandCommandResponse>
 {
-    public CreateBrandCommandDto CreateBrandCommandDto { get; set; } = null!;
+    public CreateBrandCommandDto CreateBrandCommandDtoRequest { get; set; } = null!;
 }

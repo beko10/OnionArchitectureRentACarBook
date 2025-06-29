@@ -4,6 +4,7 @@ using OnionArchitectureRentACarBook.Application.Repositories;
 using OnionArchitectureRentACarBook.Domain.Common;
 using OnionArchitectureRentACarBook.Persistence.Context;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace OnionArchitectureRentACarBook.Persistence.Repositories;
 
@@ -33,14 +34,14 @@ public class EfCoreReadRepository<TEntity> : IReadRepository<TEntity> where TEnt
         return await _dbSet.AnyAsync(predicate,cancellationToken);
     }
 
-    public IQueryable<TEntity> GetAll(bool tracking = true, CancellationToken cancellationToken = default)
+    public  IQueryable<TEntity> GetAll(bool tracking = true, CancellationToken cancellationToken = default)
     {
         var query = _dbSet.AsQueryable();
         if(!tracking)
         {
             query = query.AsNoTracking();   
         }
-        return query;
+        return  query;
     }
 
     public async Task<IEnumerable<TEntity>> GetAllWithIncludesAsync(params Expression<Func<TEntity, object>>[] includes)

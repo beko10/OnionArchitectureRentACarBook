@@ -80,5 +80,31 @@ public static class OperationMessages
         public const string GetAllEmpty = "Henüz brand bilgisi bulunmamaktadır.";
     }
 
+    public static class CarOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Car bilgisi başarıyla oluşturuldu.";
+        public const string CreateFailed = "Car bilgisi oluşturulurken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Car bilgisi oluşturulurken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Car bilgisi başarıyla güncellendi.";
+        public const string UpdateFailed = "Car bilgisi güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Car bilgisi güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek car bilgisi bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Car bilgisi başarıyla silindi.";
+        public const string DeleteFailed = "Car bilgisi silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Car bilgisi silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek car bilgisi bulunamadı.";
+
+        // Get Messages
+        public const string GetSuccess = "Car bilgisi başarıyla getirildi.";
+        public const string GetNotFound = "Car bilgisi bulunamadı.";
+        public const string GetAllSuccess = "Car bilgileri başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz car bilgisi bulunmamaktadır.";
+    }
+
 
 }

@@ -6,5 +6,5 @@ namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutComman
 
 public class CreateAboutCommandRequest : IRequest<CreateAboutCommandResponse>
 {
-    public CreateAboutDto CreateAboutDto { get; set; } = null!;
+    public CreateAboutDto CreateAboutDtoRequest { get; set; } = null!;
 }

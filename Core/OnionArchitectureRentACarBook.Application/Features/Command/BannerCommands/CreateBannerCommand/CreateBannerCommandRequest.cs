@@ -5,5 +5,5 @@ namespace OnionArchitectureRentACarBook.Application.Features.Command.BannerComma
 
 public class CreateBannerCommandRequest : IRequest<CreateBannerCommandResponse>
 {
-    public CreateBannerCommandDto CreateBannerCommandDto { get; set; } = null!;
+    public CreateBannerCommandDto CreateBannerCommandDtoRequest { get; set; } = null!;
 }
