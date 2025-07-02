@@ -1,8 +1,9 @@
 ﻿using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using OnionArchitectureRentACarBook.Application.ApplicationServices.BusinessRuleServices.AboutBusinessRuleService;
+using OnionArchitectureRentACarBook.Application.ApplicationServices.BusinessRuleServices.AboutRuleService;
 using OnionArchitectureRentACarBook.Application.Common.Behaviors;
-using OnionArchitectureRentACarBook.Domain.Entities;
 using System.Reflection;
 
 namespace OnionArchitectureRentACarBook.Application;
@@ -20,6 +21,7 @@ public static class ServiceRegistration
 
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
+        services.AddScoped<IAboutBusinessRuleService, AboutBusinessRuleService>();
         return services;
     }
 }
