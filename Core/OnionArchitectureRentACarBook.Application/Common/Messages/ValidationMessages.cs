@@ -48,22 +48,6 @@ public static class ValidationMessages
     }
 
     /// <summary>
-    /// "Araç" (Car) varlýðý için doðrulama mesajlarý.
-    /// </summary>
-    public static class CarValidationMessages
-    {
-        public const string BrandRequired = "Araç markasý zorunludur.";
-        public const string ModelRequired = "Araç modeli zorunludur.";
-        public const string YearRequired = "Araç model yýlý zorunludur.";
-        public const string InvalidYear = "Model yýlý 1900 ile güncel yýl arasýnda olmalýdýr.";
-        public const string InvalidLicensePlate = "Geçersiz plaka formatý. (Örnek: 34 ABC 1234)";
-        public const string FuelTypeRequired = "Yakýt türü seçimi zorunludur.";
-        public const string TransmissionRequired = "Vites türü seçimi zorunludur.";
-        public const string InvalidMileage = "Kilometre bilgisi sýfýr veya pozitif bir deðer olmalýdýr.";
-        public const string InvalidDailyPrice = "Günlük kiralama ücreti sýfýrdan büyük olmalýdýr.";
-    }
-
-    /// <summary>
     /// "Kullanýcý" (User) varlýðý için doðrulama mesajlarý.
     /// </summary>
     public static class UserValidationMessages
@@ -94,4 +78,42 @@ public static class ValidationMessages
         public const string MessageTooShort = "Mesaj en az 10 karakter olmalýdýr.";
         public const string MessageTooLong = "Mesaj en fazla 1000 karakter olmalýdýr.";
     }
+
+    /// <summary>
+    /// "Marka" (Brand) varlýðý için doðrulama mesajlarý.
+    /// </summary>
+    public static class BrandValidationMessages
+    {
+        public const string NameLength = "Marka adý en az 2, en fazla 50 karakter olmalýdýr.";
+        public const string NameInvalidChars = "Marka adý yalnýzca harf, sayý, boþluk ve noktalama iþaretleri içerebilir.";
+        public const string InvalidId = "Geçerli bir marka ID'si girilmelidir.";
+    }
+
+    public static class CarValidationMessages
+    {
+        public const string BrandRequired = "Araç markasý alaný boþ býrakýlamaz.";
+        public const string BrandIdRequired = "Marka ID'si belirtilmelidir.";
+
+        public const string ModelRequired = "Araç modeli alaný zorunludur.";
+        public const string InvalidModelCharacters = "Araç modeli geçersiz karakterler içeriyor.";
+
+        public const string FuelTypeRequired = "Yakýt türü seçimi zorunludur.";
+        public const string TransmissionRequired = "Vites türü seçimi zorunludur.";
+
+        public const string CoverImageUrlRequired = "Kapak görseli URL'si zorunludur.";
+        public const string BigImageUrlRequired = "Detay görseli URL'si zorunludur.";
+        public const string InvalidImageUrlFormat = "Geçerli bir görsel URL'si giriniz (.jpg, .png vb.).";
+
+        public const string SeatMustBePositive = "Araç koltuk sayýsý 0’dan büyük olmalýdýr.";
+        public const string LuggageMustBePositive = "Bagaj kapasitesi 0 veya daha büyük olmalýdýr.";
+        public const string InvalidMileage = "Kilometre bilgisi negatif olamaz.";
+    }
+
+    public static class CarFeatureValidationMessages
+    {
+        public const string CarIdRequired = "Araç ID alaný zorunludur.";
+        public const string FeatureIdRequired = "Özellik ID alaný zorunludur.";
+        public const string IdRequired = "Geçerli bir özellik ID'si girilmelidir.";
+    }
+
 }

@@ -106,5 +106,30 @@ public static class OperationMessages
         public const string GetAllEmpty = "Henüz car bilgisi bulunmamaktadır.";
     }
 
+    public static class CarFeatureOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Araç özelliği başarıyla eklendi.";
+        public const string CreateFailed = "Araç özelliği eklenirken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Araç özelliği eklenirken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Araç özelliği başarıyla güncellendi.";
+        public const string UpdateFailed = "Araç özelliği güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Araç özelliği güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek araç özelliği bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Araç özelliği başarıyla silindi.";
+        public const string DeleteFailed = "Araç özelliği silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Araç özelliği silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek araç özelliği bulunamadı.";
+
+        // Get Messages
+        public const string GetSuccess = "Araç özelliği başarıyla getirildi.";
+        public const string GetNotFound = "Araç özelliği bulunamadı.";
+        public const string GetAllSuccess = "Araç özellikleri başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz araç özelliği bilgisi bulunmamaktadır.";
+    }
 
 }
