@@ -116,4 +116,12 @@ public static class ValidationMessages
         public const string IdRequired = "Geçerli bir özellik ID'si girilmelidir.";
     }
 
+    public static class CarPricingValidationMessages
+    {
+        public const string AmountPositive = "Fiyat bilgisi sýfýrdan büyük olmalýdýr.";
+        public const string CarIdRequired = "Araç ID'si belirtilmelidir.";
+        public const string PricingIdRequired = "Fiyatlandýrma ID'si belirtilmelidir.";
+        public const string IdRequired = "CarPricing ID'si geçerli olmalýdýr.";
+    }
+
 }

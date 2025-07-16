@@ -132,4 +132,30 @@ public static class OperationMessages
         public const string GetAllEmpty = "Henüz araç özelliği bilgisi bulunmamaktadır.";
     }
 
+    public static class CarPricingOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Araç fiyatlandırması başarıyla oluşturuldu.";
+        public const string CreateFailed = "Araç fiyatlandırması oluşturulurken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Araç fiyatlandırması oluşturulurken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Araç fiyatlandırması başarıyla güncellendi.";
+        public const string UpdateFailed = "Araç fiyatlandırması güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Araç fiyatlandırması güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek araç fiyatlandırması bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Araç fiyatlandırması başarıyla silindi.";
+        public const string DeleteFailed = "Araç fiyatlandırması silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Araç fiyatlandırması silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek araç fiyatlandırması bulunamadı.";
+
+        // Get Messages
+        public const string GetSuccess = "Araç fiyatlandırması başarıyla getirildi.";
+        public const string GetNotFound = "Araç fiyatlandırması bulunamadı.";
+        public const string GetAllSuccess = "Araç fiyatlandırmaları başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz araç fiyatlandırması bilgisi bulunmamaktadır.";
+    }
+
 }
