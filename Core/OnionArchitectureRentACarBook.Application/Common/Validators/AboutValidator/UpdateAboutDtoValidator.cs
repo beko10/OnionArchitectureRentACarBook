@@ -3,13 +3,13 @@ using OnionArchitectureRentACarBook.Application.Common.Messages;
 using OnionArchitectureRentACarBook.Application.Common.ValidationPatterns;
 using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
 
-public class UpdateAboutDtoValidator : AbstractValidator<UpdateAboutDto>
+public class UpdateAboutDtoValidator : AbstractValidator<UpdateAboutCommandDto>
 {
     public UpdateAboutDtoValidator()
     {
         RuleFor(x => x.Id)
             .NotEmpty().WithMessage(ValidationMessages.CommonValidationMessages.RequiredField)
-            .WithName(nameof(UpdateAboutDto.Id));
+            .WithName(nameof(UpdateAboutCommandDto.Id));
 
         RuleFor(x => x.Title)
             .NotEmpty().WithMessage(ValidationMessages.AboutValidationMessages.TitleRequired)
@@ -17,19 +17,19 @@ public class UpdateAboutDtoValidator : AbstractValidator<UpdateAboutDto>
             .MaximumLength(200).WithMessage(ValidationMessages.CommonValidationMessages.MaxLengthExceeded)
             .Matches(ValidationRegexPatterns.AboutRegexPatterns.TitleCharacters)
             .WithMessage(ValidationMessages.AboutValidationMessages.InvalidTitleCharacters)
-            .WithName(nameof(UpdateAboutDto.Title));
+            .WithName(nameof(UpdateAboutCommandDto.Title));
 
         RuleFor(x => x.Description)
             .NotEmpty().WithMessage(ValidationMessages.AboutValidationMessages.DescriptionRequired)
             .MinimumLength(20).WithMessage(ValidationMessages.CommonValidationMessages.MinLengthNotMet)
             .MaximumLength(1000).WithMessage(ValidationMessages.CommonValidationMessages.MaxLengthExceeded)
-            .WithName(nameof(UpdateAboutDto.Description));
+            .WithName(nameof(UpdateAboutCommandDto.Description));
 
         RuleFor(x => x.ImageUrl)
             .NotEmpty().WithMessage(ValidationMessages.AboutValidationMessages.ImageUrlRequired)
             .Must(BeValidImageUrl).WithMessage(ValidationMessages.AboutValidationMessages.InvalidImageUrl)
             .When(x => !string.IsNullOrWhiteSpace(x.ImageUrl))
-            .WithName(nameof(UpdateAboutDto.ImageUrl));
+            .WithName(nameof(UpdateAboutCommandDto.ImageUrl));
     }
 
     private static bool BeValidImageUrl(string url)

@@ -5,7 +5,7 @@ using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
 
 namespace OnionArchitectureRentACarBook.Application.Common.Validators.AboutValidator;
 
-public class CreateAboutDtoValidator : AbstractValidator<CreateAboutDto>
+public class CreateAboutDtoValidator : AbstractValidator<CreateAboutCommandDto>
 {
     public CreateAboutDtoValidator()
     {
@@ -15,19 +15,19 @@ public class CreateAboutDtoValidator : AbstractValidator<CreateAboutDto>
             .MaximumLength(200).WithMessage(ValidationMessages.CommonValidationMessages.MaxLengthExceeded)
             .Matches(ValidationRegexPatterns.AboutRegexPatterns.TitleCharacters)
             .WithMessage(ValidationMessages.AboutValidationMessages.InvalidTitleCharacters)
-            .WithName(nameof(CreateAboutDto.Title));
+            .WithName(nameof(CreateAboutCommandDto.Title));
 
         RuleFor(x => x.Description)
             .NotEmpty().WithMessage(ValidationMessages.AboutValidationMessages.DescriptionRequired)
             .MinimumLength(20).WithMessage(ValidationMessages.CommonValidationMessages.MinLengthNotMet)
             .MaximumLength(1000).WithMessage(ValidationMessages.CommonValidationMessages.MaxLengthExceeded)
-            .WithName(nameof(CreateAboutDto.Description));
+            .WithName(nameof(CreateAboutCommandDto.Description));
 
         RuleFor(x => x.ImageUrl)
             .NotEmpty().WithMessage(ValidationMessages.AboutValidationMessages.ImageUrlRequired)
             .Must(BeValidImageUrl).WithMessage(ValidationMessages.AboutValidationMessages.InvalidImageUrl)
             .When(x => !string.IsNullOrEmpty(x.ImageUrl))
-            .WithName(nameof(CreateAboutDto.ImageUrl));
+            .WithName(nameof(CreateAboutCommandDto.ImageUrl));
     }
 
     private static bool BeValidImageUrl(string? url)

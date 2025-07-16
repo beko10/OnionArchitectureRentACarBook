@@ -1,127 +1,134 @@
 namespace OnionArchitectureRentACarBook.Application.Common.Messages;
 
 /// <summary>
-/// FluentValidation için varlýk bazýnda gruplandýrýlmýþ doðrulama mesajlarýný içerir.
+/// FluentValidation iï¿½in varlï¿½k bazï¿½nda gruplandï¿½rï¿½lmï¿½ï¿½ doï¿½rulama mesajlarï¿½nï¿½ iï¿½erir.
 /// </summary>
 public static class ValidationMessages
 {
     /// <summary>
-    /// Genel veya birden fazla varlýk için geçerli olabilecek mesajlar.
+    /// Genel veya birden fazla varlï¿½k iï¿½in geï¿½erli olabilecek mesajlar.
     /// </summary>
     public static class CommonValidationMessages
     {
-        public const string RequiredField = "{PropertyName} alaný zorunludur.";
+        public const string RequiredField = "{PropertyName} alanï¿½ zorunludur.";
         public const string MaxLengthExceeded = "{PropertyName} en fazla {MaxLength} karakter olabilir.";
-        public const string MinLengthNotMet = "{PropertyName} en az {MinLength} karakter olmalýdýr.";
-        public const string InvalidUrlFormat = "Geçersiz URL formatý. Lütfen geçerli bir URL giriniz.";
-        public const string InvalidEmailFormat = "Geçersiz e-posta formatý. Lütfen geçerli bir e-posta adresi giriniz.";
-        public const string InvalidPhoneFormat = "Geçersiz telefon numarasý formatý.";
-        public const string InvalidDateFormat = "Geçersiz tarih formatý.";
-        public const string InvalidNumericValue = "Lütfen geçerli bir sayý giriniz.";
-        public const string PositiveNumberRequired = "Deðer sýfýrdan büyük olmalýdýr.";
-        public const string PastDateNotAllowed = "Gelecek bir tarih seçiniz.";
-        public const string FutureDateNotAllowed = "Geçmiþ bir tarih seçiniz.";
+        public const string MinLengthNotMet = "{PropertyName} en az {MinLength} karakter olmalï¿½dï¿½r.";
+        public const string InvalidUrlFormat = "Geï¿½ersiz URL formatï¿½. Lï¿½tfen geï¿½erli bir URL giriniz.";
+        public const string InvalidEmailFormat = "Geï¿½ersiz e-posta formatï¿½. Lï¿½tfen geï¿½erli bir e-posta adresi giriniz.";
+        public const string InvalidPhoneFormat = "Geï¿½ersiz telefon numarasï¿½ formatï¿½.";
+        public const string InvalidDateFormat = "Geï¿½ersiz tarih formatï¿½.";
+        public const string InvalidNumericValue = "Lï¿½tfen geï¿½erli bir sayï¿½ giriniz.";
+        public const string PositiveNumberRequired = "Deï¿½er sï¿½fï¿½rdan bï¿½yï¿½k olmalï¿½dï¿½r.";
+        public const string PastDateNotAllowed = "Gelecek bir tarih seï¿½iniz.";
+        public const string FutureDateNotAllowed = "Geï¿½miï¿½ bir tarih seï¿½iniz.";
 
     }
 
     /// <summary>
-    /// "Banner" varlýðý için doðrulama mesajlarý.
+    /// "Banner" varlï¿½ï¿½ï¿½ iï¿½in doï¿½rulama mesajlarï¿½.
     /// </summary>
     public static class BannerValidationMessages
     {
-        public const string TitleLength = "Baþlýk en az 2, en fazla 100 karakter olmalýdýr.";
-        public const string TitleInvalidChars = "Baþlýk geçersiz karakter içeriyor.";
-        public const string DescriptionLength = "Açýklama en az 10, en fazla 500 karakter olmalýdýr.";
-        public const string InvalidVideoUrl = "Lütfen desteklenen bir video URL'si giriniz (YouTube, Vimeo, .mp4 vb.).";
+        public const string IdRequired = "Id alanÄ± boÅŸ olamaz";
+        public const string TitleLength = "Baï¿½lï¿½k en az 2, en fazla 100 karakter olmalï¿½dï¿½r.";
+        public const string TitleInvalidChars = "Baï¿½lï¿½k geï¿½ersiz karakter iï¿½eriyor.";
+        public const string DescriptionLength = "Aï¿½ï¿½klama en az 10, en fazla 500 karakter olmalï¿½dï¿½r.";
+        public const string InvalidVideoUrl = "Lï¿½tfen desteklenen bir video URL'si giriniz (YouTube, Vimeo, .mp4 vb.).";
     }
 
     /// <summary>
-    /// "Hakkýmýzda" (About) varlýðý için doðrulama mesajlarý.
+    /// "Hakkï¿½mï¿½zda" (About) varlï¿½ï¿½ï¿½ iï¿½in doï¿½rulama mesajlarï¿½.
     /// </summary>
     public static class AboutValidationMessages
     {
-        public const string TitleRequired = "Hakkýmýzda baþlýðý zorunludur.";
-        public const string DescriptionRequired = "Hakkýmýzda açýklamasý zorunludur.";
-        public const string InvalidTitleCharacters = "Baþlýk geçersiz karakter içeriyor.";
-        public const string ImageUrlRequired = "Hakkýmýzda görsel URL'si zorunludur.";
-        public const string InvalidImageUrl = "Lütfen geçerli bir görsel URL'si giriniz (.jpg, .png, .gif vb.).";
+        public const string IdRequired = "Id alanÄ± boÅŸ olamaz";
+        public const string TitleRequired = "Hakkï¿½mï¿½zda baï¿½lï¿½ï¿½ï¿½ zorunludur.";
+        public const string DescriptionRequired = "Hakkï¿½mï¿½zda aï¿½ï¿½klamasï¿½ zorunludur.";
+        public const string InvalidTitleCharacters = "Baï¿½lï¿½k geï¿½ersiz karakter iï¿½eriyor.";
+        public const string ImageUrlRequired = "Hakkï¿½mï¿½zda gï¿½rsel URL'si zorunludur.";
+        public const string InvalidImageUrl = "Lï¿½tfen geï¿½erli bir gï¿½rsel URL'si giriniz (.jpg, .png, .gif vb.).";
     }
 
     /// <summary>
-    /// "Kullanýcý" (User) varlýðý için doðrulama mesajlarý.
+    /// "Kullanï¿½cï¿½" (User) varlï¿½ï¿½ï¿½ iï¿½in doï¿½rulama mesajlarï¿½.
     /// </summary>
     public static class UserValidationMessages
     {
-        public const string FirstNameRequired = "Ad alaný zorunludur.";
-        public const string LastNameRequired = "Soyad alaný zorunludur.";
+        public const string IdRequired = "Id alanÄ± boÅŸ olamaz";
+        public const string FirstNameRequired = "Ad alanï¿½ zorunludur.";
+        public const string LastNameRequired = "Soyad alanï¿½ zorunludur.";
         public const string EmailRequired = "E-posta adresi zorunludur.";
-        public const string EmailAlreadyExists = "Bu e-posta adresi zaten kullanýmda.";
-        public const string PasswordRequired = "Þifre zorunludur.";
-        public const string PasswordTooWeak = "Þifre en az 8 karakter olmalý, büyük-küçük harf, rakam ve özel karakter içermelidir.";
-        public const string PasswordsNotMatch = "Þifreler eþleþmiyor.";
-        public const string PhoneRequired = "Telefon numarasý zorunludur.";
-        public const string InvalidBirthDate = "Doðum tarihi geçerli deðil. 18 yaþýndan büyük olmalýsýnýz.";
-        public const string LicenseNumberRequired = "Ehliyet numarasý zorunludur.";
-        public const string InvalidLicenseNumber = "Geçersiz ehliyet numarasý formatý.";
+        public const string EmailAlreadyExists = "Bu e-posta adresi zaten kullanï¿½mda.";
+        public const string PasswordRequired = "ï¿½ifre zorunludur.";
+        public const string PasswordTooWeak = "ï¿½ifre en az 8 karakter olmalï¿½, bï¿½yï¿½k-kï¿½ï¿½ï¿½k harf, rakam ve ï¿½zel karakter iï¿½ermelidir.";
+        public const string PasswordsNotMatch = "ï¿½ifreler eï¿½leï¿½miyor.";
+        public const string PhoneRequired = "Telefon numarasï¿½ zorunludur.";
+        public const string InvalidBirthDate = "Doï¿½um tarihi geï¿½erli deï¿½il. 18 yaï¿½ï¿½ndan bï¿½yï¿½k olmalï¿½sï¿½nï¿½z.";
+        public const string LicenseNumberRequired = "Ehliyet numarasï¿½ zorunludur.";
+        public const string InvalidLicenseNumber = "Geï¿½ersiz ehliyet numarasï¿½ formatï¿½.";
     }
 
   
     /// <summary>
-    /// "Ýletiþim" (Contact) varlýðý için doðrulama mesajlarý.
+    /// "ï¿½letiï¿½im" (Contact) varlï¿½ï¿½ï¿½ iï¿½in doï¿½rulama mesajlarï¿½.
     /// </summary>
     public static class ContactValidationMessages
     {
+        public const string IdRequired = "Id alanÄ± boÅŸ olamaz";
         public const string NameRequired = "Ad Soyad zorunludur.";
         public const string EmailRequired = "E-posta adresi zorunludur.";
-        public const string SubjectRequired = "Konu baþlýðý zorunludur.";
-        public const string MessageRequired = "Mesaj içeriði zorunludur.";
-        public const string MessageTooShort = "Mesaj en az 10 karakter olmalýdýr.";
-        public const string MessageTooLong = "Mesaj en fazla 1000 karakter olmalýdýr.";
+        public const string SubjectRequired = "Konu baï¿½lï¿½ï¿½ï¿½ zorunludur.";
+        public const string MessageRequired = "Mesaj iï¿½eriï¿½i zorunludur.";
+        public const string MessageTooShort = "Mesaj en az 10 karakter olmalï¿½dï¿½r.";
+        public const string MessageTooLong = "Mesaj en fazla 1000 karakter olmalï¿½dï¿½r.";
     }
 
     /// <summary>
-    /// "Marka" (Brand) varlýðý için doðrulama mesajlarý.
+    /// "Marka" (Brand) varlï¿½ï¿½ï¿½ iï¿½in doï¿½rulama mesajlarï¿½.
     /// </summary>
     public static class BrandValidationMessages
     {
-        public const string NameLength = "Marka adý en az 2, en fazla 50 karakter olmalýdýr.";
-        public const string NameInvalidChars = "Marka adý yalnýzca harf, sayý, boþluk ve noktalama iþaretleri içerebilir.";
-        public const string InvalidId = "Geçerli bir marka ID'si girilmelidir.";
+        public const string IdRequired = "Id alanÄ± boÅŸ olamaz";
+        public const string NameLength = "Marka adï¿½ en az 2, en fazla 50 karakter olmalï¿½dï¿½r.";
+        public const string NameInvalidChars = "Marka adï¿½ yalnï¿½zca harf, sayï¿½, boï¿½luk ve noktalama iï¿½aretleri iï¿½erebilir.";
+        public const string InvalidId = "Geï¿½erli bir marka ID'si girilmelidir.";
     }
 
     public static class CarValidationMessages
     {
-        public const string BrandRequired = "Araç markasý alaný boþ býrakýlamaz.";
+        
+        public const string IdRequired = "Id alanÄ± boÅŸ olamaz";
+        public const string BrandRequired = "Araï¿½ markasï¿½ alanï¿½ boï¿½ bï¿½rakï¿½lamaz.";
         public const string BrandIdRequired = "Marka ID'si belirtilmelidir.";
 
-        public const string ModelRequired = "Araç modeli alaný zorunludur.";
-        public const string InvalidModelCharacters = "Araç modeli geçersiz karakterler içeriyor.";
+        public const string ModelRequired = "Araï¿½ modeli alanï¿½ zorunludur.";
+        public const string InvalidModelCharacters = "Araï¿½ modeli geï¿½ersiz karakterler iï¿½eriyor.";
 
-        public const string FuelTypeRequired = "Yakýt türü seçimi zorunludur.";
-        public const string TransmissionRequired = "Vites türü seçimi zorunludur.";
+        public const string FuelTypeRequired = "Yakï¿½t tï¿½rï¿½ seï¿½imi zorunludur.";
+        public const string TransmissionRequired = "Vites tï¿½rï¿½ seï¿½imi zorunludur.";
 
-        public const string CoverImageUrlRequired = "Kapak görseli URL'si zorunludur.";
-        public const string BigImageUrlRequired = "Detay görseli URL'si zorunludur.";
-        public const string InvalidImageUrlFormat = "Geçerli bir görsel URL'si giriniz (.jpg, .png vb.).";
+        public const string CoverImageUrlRequired = "Kapak gï¿½rseli URL'si zorunludur.";
+        public const string BigImageUrlRequired = "Detay gï¿½rseli URL'si zorunludur.";
+        public const string InvalidImageUrlFormat = "Geï¿½erli bir gï¿½rsel URL'si giriniz (.jpg, .png vb.).";
 
-        public const string SeatMustBePositive = "Araç koltuk sayýsý 0’dan büyük olmalýdýr.";
-        public const string LuggageMustBePositive = "Bagaj kapasitesi 0 veya daha büyük olmalýdýr.";
+        public const string SeatMustBePositive = "Araï¿½ koltuk sayï¿½sï¿½ 0ï¿½dan bï¿½yï¿½k olmalï¿½dï¿½r.";
+        public const string LuggageMustBePositive = "Bagaj kapasitesi 0 veya daha bï¿½yï¿½k olmalï¿½dï¿½r.";
         public const string InvalidMileage = "Kilometre bilgisi negatif olamaz.";
     }
 
     public static class CarFeatureValidationMessages
     {
-        public const string CarIdRequired = "Araç ID alaný zorunludur.";
-        public const string FeatureIdRequired = "Özellik ID alaný zorunludur.";
-        public const string IdRequired = "Geçerli bir özellik ID'si girilmelidir.";
+        public const string CarIdRequired = "Araï¿½ ID alanï¿½ zorunludur.";
+        public const string FeatureIdRequired = "ï¿½zellik ID alanï¿½ zorunludur.";
+        public const string IdRequired = "Geï¿½erli bir ï¿½zellik ID'si girilmelidir.";
     }
 
     public static class CarPricingValidationMessages
     {
-        public const string AmountPositive = "Fiyat bilgisi sýfýrdan büyük olmalýdýr.";
-        public const string CarIdRequired = "Araç ID'si belirtilmelidir.";
-        public const string PricingIdRequired = "Fiyatlandýrma ID'si belirtilmelidir.";
-        public const string IdRequired = "CarPricing ID'si geçerli olmalýdýr.";
+        public const string AmountPositive = "Fiyat bilgisi sï¿½fï¿½rdan bï¿½yï¿½k olmalï¿½dï¿½r.";
+        public const string CarIdRequired = "Araï¿½ ID'si belirtilmelidir.";
+        public const string PricingIdRequired = "Fiyatlandï¿½rma ID'si belirtilmelidir.";
+        public const string IdRequired = "CarPricing ID'si geï¿½erli olmalï¿½dï¿½r.";
     }
 
 }
