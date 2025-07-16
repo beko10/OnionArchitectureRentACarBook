@@ -20,16 +20,7 @@ public class GetByIdCarPricingQueryHandler : IRequestHandler<GetByIdCarPricingQu
 
     public async Task<GetByIdCarPricingQueryResponse> Handle(GetByIdCarPricingQueryRequest request, CancellationToken cancellationToken)
     {
-        if (request is null)
-        {
-            throw new ArgumentNullException(nameof(request), "Request cannot be null.");
-        }
-
-        if (string.IsNullOrEmpty(request.Id))
-        {
-            throw new ArgumentException("Car pricing ID cannot be null or empty.", nameof(request.Id));
-        }
-
+    
         var carPricing = _carPricingReadRepository.GetByIdAsync(request.Id, cancellationToken: cancellationToken);
 
         if (carPricing is null)
@@ -41,7 +32,7 @@ public class GetByIdCarPricingQueryHandler : IRequestHandler<GetByIdCarPricingQu
         }
 
         var carPricingDto = _mapper.Map<CarPricingQueryDto>(carPricing);
-        
+
         return new GetByIdCarPricingQueryResponse
         {
             Result = ResultData<CarPricingQueryDto>.Success(carPricingDto)

@@ -22,14 +22,6 @@ public class CreateCarCommandHandler : IRequestHandler<CreateCarCommandRequest, 
 
     public async Task<CreateCarCommandResponse> Handle(CreateCarCommandRequest request, CancellationToken cancellationToken)
     {
-        if(request.CreateCarCommandDtoRequest is null)
-        {
-            return new CreateCarCommandResponse
-            {
-                Result = Result.Failure(OperationMessages.CarOperationMessages.CreateFailed)
-            }; 
-        }
-
         var addedCar = _mapper.Map<Car>(request.CreateCarCommandDtoRequest);
         await _carWriteRepository.AddAsync(addedCar);
         await _unitOfWork.SaveAsync();

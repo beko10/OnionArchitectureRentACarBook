@@ -24,16 +24,8 @@ public class UpdateCarPricingCommandHandler : IRequestHandler<UpdateCarPricingCo
 
     public async Task<UpdateCarPricingCommandResponse> Handle(UpdateCarPricingCommandRequest request, CancellationToken cancellationToken)
     {
-        if(request is null)
-        {
-            throw new ArgumentNullException(nameof(request), "Request cannot be null");
-        }
-
-        if(string.IsNullOrEmpty(request.Id))
-        {
-            throw new ArgumentException("Id cannot be null or empty", nameof(request.Id));
-        }
-        var hasCarPricing = await _carPricingReadRepository.GetByIdAsync(request.Id, cancellationToken);  
+   
+        var hasCarPricing = await _carPricingReadRepository.GetByIdAsync(request.Id, cancellationToken);
 
         if (hasCarPricing is null)
         {
@@ -43,6 +35,12 @@ public class UpdateCarPricingCommandHandler : IRequestHandler<UpdateCarPricingCo
             };
         }
 
-        _mapper.Map(request,hasCarPricing);
+        _mapper.Map(request, hasCarPricing);
+        await _carPricingWriteRepository.UpdateAsync(hasCarPricing);
+        await _unitOfWork.SaveAsync();
+        return new UpdateCarPricingCommandResponse
+        {
+            Result = Result.Success(OperationMessages.CarPricingOperationMessages.UpdateSuccess)
+        };
     }
 }

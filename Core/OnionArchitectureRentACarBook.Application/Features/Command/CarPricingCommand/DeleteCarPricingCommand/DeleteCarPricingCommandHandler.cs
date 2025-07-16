@@ -22,15 +22,7 @@ public class DeleteCarPricingCommandHandler : IRequestHandler<DeleteCarPricingCo
 
     public async Task<DeleteCarPricingCommandResponse> Handle(DeleteCarPricingCommandRequest request, CancellationToken cancellationToken)
     {
-        if(request is null)
-        {
-            throw new ArgumentNullException(nameof(request));
-        }
-
-        if(request.Id is null)
-        {
-            throw new ArgumentNullException(nameof(request));
-        }
+    
 
         var searchedByIdHasCarPricing = await _carPricingReadRepository.GetByIdAsync(id:request.Id,cancellationToken:cancellationToken);
 

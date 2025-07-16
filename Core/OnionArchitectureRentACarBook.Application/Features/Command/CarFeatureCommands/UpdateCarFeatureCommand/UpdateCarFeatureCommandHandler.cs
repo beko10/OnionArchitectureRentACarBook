@@ -24,15 +24,7 @@ public class UpdateCarFeatureCommandHandler : IRequestHandler<UpdateCarFeatureCo
 
     public async Task<UpdateCarFeatureCommandResponse> Handle(UpdateCarFeatureCommandRequest request, CancellationToken cancellationToken)
     {
-        if(request is null)
-        {
-            throw new ArgumentNullException(nameof(request), "Request cannot be null.");
-        }
-
-        if (string.IsNullOrEmpty(request.Id))
-        {
-            throw new ArgumentException("Car feature ID cannot be null or empty.", nameof(request.Id));
-        }
+    
 
         var hasCarFeature = await _carFeatureReadRepository.GetByIdAsync(id:request.Id, cancellationToken:cancellationToken);
 

@@ -23,16 +23,6 @@ public class CreateCarPricingCommandHandler : IRequestHandler<CreateCarPricingCo
 
     public async Task<CreateCarPricingCommandResponse> Handle(CreateCarPricingCommandRequest request, CancellationToken cancellationToken)
     {
-        if(request is null)
-        {
-            throw new ArgumentNullException(nameof(request), "Request cannot be null");
-        }
-
-        if(request.CreateCarPricingCommandDtoRequest is null)
-        {
-            throw new ArgumentException("Car pricing name cannot be null or empty", nameof(request.CreateCarPricingCommandDtoRequest));
-        }
-
         var addedCarPricing = _mapper.Map<CarPricing>(request.CreateCarPricingCommandDtoRequest);
 
         await _carPricingWriteRepository.AddAsync(entity:addedCarPricing, cancellationToken:cancellationToken);

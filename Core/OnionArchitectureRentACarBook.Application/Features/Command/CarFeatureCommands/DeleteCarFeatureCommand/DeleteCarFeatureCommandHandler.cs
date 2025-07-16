@@ -21,15 +21,7 @@ public class DeleteCarFeatureCommandHandler : IRequestHandler<DeleteCarFeatureCo
 
     public async Task<DeleteCarFeatureCommandResponse> Handle(DeleteCarFeatureCommandRequest request, CancellationToken cancellationToken)
     {
-        if(request is null)
-        {
-            throw new ArgumentNullException(nameof(request));
-        }
-
-        if(string.IsNullOrEmpty(request.Id))
-        {
-            throw new ArgumentNullException(nameof(request.Id));
-        }
+    
 
         var deletedCarFeature = await _carFeatureReadRepository.GetByIdAsync(id : request.Id,cancellationToken:cancellationToken);
 

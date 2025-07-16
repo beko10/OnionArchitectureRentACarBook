@@ -23,13 +23,6 @@ internal class CarFeatureCommandHandler : IRequestHandler<CarFeatureCommandReque
 
     public async Task<CarFeatureCommandResponse> Handle(CarFeatureCommandRequest request, CancellationToken cancellationToken)
     {
-       if(request.CreateCarCommandDtoRequest is null)
-       {
-            return new CarFeatureCommandResponse
-            {
-                Result = Result.Failure(OperationMessages.CarFeatureOperationMessages.CreateFailed)
-            };
-       }
 
         var addedCarFeature = _mapper.Map<CarFeature>(request.CreateCarCommandDtoRequest);
         
