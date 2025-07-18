@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using OnionArchitectureRentACarBook.Application.DTOs.CarDto;
+using OnionArchitectureRentACarBook.Application.DTOs.CarDtos;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Command.CarCommands.CreateCarCommand;
 

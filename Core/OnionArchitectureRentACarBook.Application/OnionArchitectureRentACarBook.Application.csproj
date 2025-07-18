@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DTOs\CarDto\**" />
+    <EmbeddedResource Remove="DTOs\CarDto\**" />
+    <None Remove="DTOs\CarDto\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
@@ -15,10 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnionArchitectureRentACarBook.Domain\OnionArchitectureRentACarBook.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="DTOs\CarDto\CreateCarCommandDto.cs" />
   </ItemGroup>
 
 

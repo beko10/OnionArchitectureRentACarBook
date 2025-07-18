@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Query.AboutQueries.GetAllAboutQuery;

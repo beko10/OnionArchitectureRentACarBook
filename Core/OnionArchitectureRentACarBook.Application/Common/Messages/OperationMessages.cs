@@ -158,4 +158,34 @@ public static class OperationMessages
         public const string GetAllEmpty = "Henüz araç fiyatlandırması bilgisi bulunmamaktadır.";
     }
 
+    public static class CategoryOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Kategori başarıyla oluşturuldu.";
+        public const string CreateFailed = "Kategori oluşturulurken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Kategori oluşturulurken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Kategori başarıyla güncellendi.";
+        public const string UpdateFailed = "Kategori güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Kategori güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek kategori bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Kategori başarıyla silindi.";
+        public const string DeleteFailed = "Kategori silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Kategori silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek kategori bulunamadı.";
+
+        // Get Messages
+        public const string GetSuccess = "Kategori başarıyla getirildi.";
+        public const string GetNotFound = "Kategori bulunamadı.";
+        public const string GetAllSuccess = "Kategoriler başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz kategori bulunmamaktadır.";
+
+        // Business Logic Messages
+        public const string NameAlreadyExists = "Bu kategori adı zaten kullanımda.";
+        public const string CategoryInUse = "Bu kategori kullanımda olduğu için silinemez.";
+        public const string CategoryHasRelatedRecords = "Bu kategoriye bağlı kayıtlar bulunduğu için silinemez.";
+    }
 }

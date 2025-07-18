@@ -31,7 +31,7 @@ internal class CarFeatureCommandHandler : IRequestHandler<CarFeatureCommandReque
 
         return new CarFeatureCommandResponse
         {
-            Result = Result.Success(OperationMessages.CarFeatureOperationMessages.CreateSuccess)
+            Result = Result.Success(OperationMessages.CategoryOperationMessages.CreateSuccess)
         };
     }
 }

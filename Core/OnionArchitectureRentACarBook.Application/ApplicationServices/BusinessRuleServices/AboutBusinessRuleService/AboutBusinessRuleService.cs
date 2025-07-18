@@ -1,5 +1,5 @@
 ﻿using OnionArchitectureRentACarBook.Application.ApplicationServices.BusinessRuleServices.AboutRuleService;
-using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
 using System;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ public class AboutBusinessRuleService : IAboutBusinessRuleService
         _aboutReadRepository = aboutReadRepository;
     }
 
-    public async Task CreateAboutBusineesRuleCheck(CreateAboutDto createAboutDto)
+    public async Task CreateAboutBusineesRuleCheck(CreateAboutCommandDto createAboutDto)
     {
         await AboutDescriptionUniqeCheck(createAboutDto.Description!);
         await AboutImageUrlUniqeCheck(createAboutDto.ImageUrl!);

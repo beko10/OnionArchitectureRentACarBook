@@ -1,10 +1,10 @@
 ﻿
 using MediatR;
-using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutCommands.CreateAboutCommand;
 
 public class CreateAboutCommandRequest : IRequest<CreateAboutCommandResponse>
 {
-    public CreateAboutDto CreateAboutDtoRequest { get; set; } = null!;
+    public CreateAboutCommandDto CreateAboutDtoRequest { get; set; } = null!;
 }

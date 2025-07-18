@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.BrandDto;
+using OnionArchitectureRentACarBook.Application.DTOs.BrandDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.BrandRepository;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Query.BrandQueries.GetByIdBrandQuery;

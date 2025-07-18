@@ -1,4 +1,4 @@
-﻿using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+﻿using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +9,6 @@ namespace OnionArchitectureRentACarBook.Application.ApplicationServices.Business
 
 public interface IAboutBusinessRuleService
 {
-    Task CreateAboutBusineesRuleCheck(CreateAboutDto createAboutDto);
+    Task CreateAboutBusineesRuleCheck(CreateAboutCommandDto createAboutDto);
     Task UpdateAboutBusineesRuleCheck(string id);
 }

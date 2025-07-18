@@ -7,8 +7,8 @@ public class CarPricingMapping : Profile
 {
     public CarPricingMapping()
     {
-        CreateMap<CarPricing, DTOs.CarPricingDto.CarPricingQueryDto>().ReverseMap();
-        CreateMap<CarPricing, DTOs.CarPricingDto.CreateCarPricingCommandDto>().ReverseMap();
-        CreateMap<CarPricing, DTOs.CarPricingDto.UpdateCarPricingCommandDto>().ReverseMap();
+        CreateMap<CarPricing, DTOs.CarPricingDtos.CarPricingQueryDto>().ReverseMap();
+        CreateMap<CarPricing, DTOs.CarPricingDtos.CreateCarPricingCommandDto>().ReverseMap();
+        CreateMap<CarPricing, DTOs.CarPricingDtos.UpdateCarPricingCommandDto>().ReverseMap();
     }
 }

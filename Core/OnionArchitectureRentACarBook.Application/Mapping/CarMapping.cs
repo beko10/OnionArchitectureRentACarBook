@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using OnionArchitectureRentACarBook.Application.DTOs.CarDto;
+using OnionArchitectureRentACarBook.Application.DTOs.CarDtos;
 using OnionArchitectureRentACarBook.Domain.Entities;
 
 namespace OnionArchitectureRentACarBook.Application.Mapping;

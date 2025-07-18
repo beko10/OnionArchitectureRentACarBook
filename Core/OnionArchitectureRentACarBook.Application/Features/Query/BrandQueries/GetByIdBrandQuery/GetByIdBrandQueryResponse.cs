@@ -1,4 +1,4 @@
-﻿using OnionArchitectureRentACarBook.Application.DTOs.BrandDto;
+﻿using OnionArchitectureRentACarBook.Application.DTOs.BrandDtos;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Query.BrandQueries.GetByIdBrandQuery;
 

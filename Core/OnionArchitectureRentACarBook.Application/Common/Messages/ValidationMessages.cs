@@ -131,4 +131,17 @@ public static class ValidationMessages
         public const string IdRequired = "CarPricing ID'si ge�erli olmal�d�r.";
     }
 
+
+    /// <summary>
+    /// "Kategori" (Category) varlığı için doğrulama mesajları.
+    /// </summary>
+    public static class CategoryValidationMessages
+    {
+        public const string IdRequired = "Id alanı boş olamaz";
+        public const string NameRequired = "Kategori adı zorunludur.";
+        public const string NameLength = "Kategori adı en az 2, en fazla 50 karakter olmalıdır.";
+        public const string NameInvalidChars = "Kategori adı yalnızca harf, sayı, boşluk ve noktalama işaretleri içerebilir.";
+        public const string NameAlreadyExists = "Bu kategori adı zaten kullanımda.";
+        public const string InvalidId = "Geçerli bir kategori ID'si girilmelidir.";
+    }
 }

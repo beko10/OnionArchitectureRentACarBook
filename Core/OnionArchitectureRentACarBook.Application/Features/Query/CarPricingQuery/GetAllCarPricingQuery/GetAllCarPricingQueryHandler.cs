@@ -1,7 +1,7 @@
 using AutoMapper;
 using MediatR;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.CarPricingDto;
+using OnionArchitectureRentACarBook.Application.DTOs.CarPricingDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.CarPricingRepository;
 
 

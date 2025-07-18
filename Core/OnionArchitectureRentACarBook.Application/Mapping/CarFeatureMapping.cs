@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using OnionArchitectureRentACarBook.Application.Common.Validators.CarFeatureValidator;
-using OnionArchitectureRentACarBook.Application.DTOs.CarFeatureDto;
+using OnionArchitectureRentACarBook.Application.DTOs.CarFeatureDtos;
 using OnionArchitectureRentACarBook.Domain.Entities;
 
 namespace OnionArchitectureRentACarBook.Application.Mapping;

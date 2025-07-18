@@ -1,6 +1,6 @@
 using FluentValidation;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.CarDto;
+using OnionArchitectureRentACarBook.Application.DTOs.CarDtos;
 
 
 namespace OnionArchitectureRentACarBook.Application.Common.Validators.CarValidator

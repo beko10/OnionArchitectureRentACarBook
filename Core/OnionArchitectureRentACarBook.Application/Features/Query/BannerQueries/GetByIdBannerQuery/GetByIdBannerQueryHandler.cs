@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.BannerDto;
+using OnionArchitectureRentACarBook.Application.DTOs.BannerDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.BannerRepository;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Query.BannerQueries.GetByIdBannerQuery;

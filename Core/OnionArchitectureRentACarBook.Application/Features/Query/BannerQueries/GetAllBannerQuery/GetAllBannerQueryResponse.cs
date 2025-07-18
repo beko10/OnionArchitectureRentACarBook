@@ -1,4 +1,4 @@
-﻿using OnionArchitectureRentACarBook.Application.DTOs.BannerDto;
+﻿using OnionArchitectureRentACarBook.Application.DTOs.BannerDtos;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Query.BannerQueries.GetAllBannerQuery;
 

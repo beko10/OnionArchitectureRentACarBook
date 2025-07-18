@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
 using OnionArchitectureRentACarBook.Application.UnitOfWork;
 
@@ -28,7 +28,7 @@ public class UpdateAboutCommandHandler : IRequestHandler<UpdateAboutCommandReque
         {
             return new UpdateAboutCommandResponse
             {
-                Result = ResultData<UpdateAboutDto>.Failure(OperationMessages.AboutOperationMessages.GetNotFound)
+                Result = ResultData<UpdateAboutCommandDto>.Failure(OperationMessages.AboutOperationMessages.GetNotFound)
             };
         }
         _mapper.Map(request.UpdateAboutDtoRequest, about);
@@ -36,7 +36,7 @@ public class UpdateAboutCommandHandler : IRequestHandler<UpdateAboutCommandReque
         await _unitOfWork.SaveAsync();
         return new UpdateAboutCommandResponse
         {
-            Result = ResultData<UpdateAboutDto>.Success(request.UpdateAboutDtoRequest, OperationMessages.AboutOperationMessages.UpdateSuccess)
+            Result = ResultData<UpdateAboutCommandDto>.Success(request.UpdateAboutDtoRequest, OperationMessages.AboutOperationMessages.UpdateSuccess)
         };
     }
 }

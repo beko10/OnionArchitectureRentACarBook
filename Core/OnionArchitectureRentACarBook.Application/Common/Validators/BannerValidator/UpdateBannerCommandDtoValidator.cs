@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
 using OnionArchitectureRentACarBook.Application.Common.ValidationPatterns;
-using OnionArchitectureRentACarBook.Application.DTOs.BannerDto;
+using OnionArchitectureRentACarBook.Application.DTOs.BannerDtos;
 
 public class UpdateBannerCommandDtoValidator : AbstractValidator<UpdateBannerCommandDto>
 {

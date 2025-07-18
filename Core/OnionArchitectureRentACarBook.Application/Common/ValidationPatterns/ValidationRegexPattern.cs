@@ -117,4 +117,16 @@ public static class ValidationRegexPatterns
         /// </summary>
         public const string LicensePlate = @"^[0-9]{2}\s?[A-ZğüşıöçĞÜŞİÖÇ]{1,3}\s?[0-9]{2,4}$";
     }
+
+
+    /// <summary>
+    /// Kategori (Category) varlığı için pattern'lar
+    /// </summary>
+    public static class CategoryRegexPatterns
+    {
+        /// <summary>
+        /// Kategori adı için izin verilen karakterler
+        /// </summary>
+        public const string CategoryName = @"^[a-zA-ZğüşıöçĞÜŞİÖÇ\s\d\-_.,()]+$";
+    }
 }

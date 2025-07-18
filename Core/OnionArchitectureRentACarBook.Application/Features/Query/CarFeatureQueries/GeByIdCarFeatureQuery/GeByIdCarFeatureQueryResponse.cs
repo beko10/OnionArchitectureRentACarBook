@@ -1,4 +1,4 @@
-﻿using OnionArchitectureRentACarBook.Application.DTOs.CarFeatureDto;
+﻿using OnionArchitectureRentACarBook.Application.DTOs.CarFeatureDtos;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Query.CarFeatureQueries.GeByIdCarFeatureQuery;
 

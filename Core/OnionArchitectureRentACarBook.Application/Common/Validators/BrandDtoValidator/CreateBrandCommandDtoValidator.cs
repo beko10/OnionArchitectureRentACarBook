@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
 using OnionArchitectureRentACarBook.Application.Common.ValidationPatterns;
-using OnionArchitectureRentACarBook.Application.DTOs.BrandDto;
+using OnionArchitectureRentACarBook.Application.DTOs.BrandDtos;
 
 public class CreateBrandCommandDtoValidator : AbstractValidator<CreateBrandCommandDto>
 {

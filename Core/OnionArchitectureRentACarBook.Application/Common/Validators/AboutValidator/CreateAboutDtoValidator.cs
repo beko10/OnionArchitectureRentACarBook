@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
 using OnionArchitectureRentACarBook.Application.Common.ValidationPatterns;
-using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
 
 namespace OnionArchitectureRentACarBook.Application.Common.Validators.AboutValidator;
 

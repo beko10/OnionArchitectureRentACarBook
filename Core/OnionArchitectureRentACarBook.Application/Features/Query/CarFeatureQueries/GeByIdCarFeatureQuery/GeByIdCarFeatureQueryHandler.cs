@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.CarFeatureDto;
+using OnionArchitectureRentACarBook.Application.DTOs.CarFeatureDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.CarFeatureRepository;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Query.CarFeatureQueries.GeByIdCarFeatureQuery;

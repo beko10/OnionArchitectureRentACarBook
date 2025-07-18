@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.CarDto;
+using OnionArchitectureRentACarBook.Application.DTOs.CarDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.CarRepository;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Query.CarQueries.GetByIdQuery;

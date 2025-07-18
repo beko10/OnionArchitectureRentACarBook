@@ -1,4 +1,4 @@
-﻿using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+﻿using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Query.AboutQueries.GetAllAboutQuery;
 

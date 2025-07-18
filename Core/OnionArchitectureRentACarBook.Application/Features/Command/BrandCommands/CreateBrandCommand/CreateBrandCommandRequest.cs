@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using OnionArchitectureRentACarBook.Application.DTOs.BrandDto;
+using OnionArchitectureRentACarBook.Application.DTOs.BrandDtos;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Command.BrandCommands.CreateBrandCommand;
 

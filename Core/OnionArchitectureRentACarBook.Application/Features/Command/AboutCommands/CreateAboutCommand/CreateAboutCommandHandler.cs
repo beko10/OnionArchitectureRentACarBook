@@ -2,7 +2,7 @@
 using MediatR;
 using OnionArchitectureRentACarBook.Application.ApplicationServices.BusinessRuleServices.AboutRuleService;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.AboutDto;
+using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
 using OnionArchitectureRentACarBook.Application.UnitOfWork;
 using OnionArchitectureRentACarBook.Domain.Entities;
@@ -29,10 +29,10 @@ public class CreateAboutCommandHandler : IRequestHandler<CreateAboutCommandReque
         var addedAboutMapping =  _mapper.Map<About>(request.CreateAboutDtoRequest);
         await _aboutWriteRepository.AddAsync(addedAboutMapping);
         await _unitOfWork.SaveAsync();
-        var aboutDto = _mapper.Map<CreateAboutDto>(addedAboutMapping);
+        var aboutDto = _mapper.Map<CreateAboutCommandDto>(addedAboutMapping);
         return new CreateAboutCommandResponse
         {
-            Result = ResultData<CreateAboutDto>.Success(aboutDto, OperationMessages.AboutOperationMessages.CreateSuccess)
+            Result = ResultData<CreateAboutCommandDto>.Success(aboutDto, OperationMessages.AboutOperationMessages.CreateSuccess)
         };
     }
 }
