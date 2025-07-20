@@ -131,6 +131,12 @@ public static class ValidationMessages
         public const string IdRequired = "CarPricing ID'si ge�erli olmal�d�r.";
     }
 
+    public static class PricingValidationMessages
+    {
+        public const string IdRequired = "Id alanı boş olamaz";
+        public const string NameRequired = "Fiyatlandırma adı zorunludur.";
+    }
+
 
     /// <summary>
     /// "Kategori" (Category) varlığı için doğrulama mesajları.
