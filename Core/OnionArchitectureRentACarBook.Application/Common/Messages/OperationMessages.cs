@@ -214,4 +214,56 @@ public static class OperationMessages
         public const string GetAllSuccess = "İletişim kayıtları başarıyla getirildi.";
         public const string GetAllEmpty = "Henüz iletişim kaydı bulunmamaktadır.";
     }
+
+    public static class FeatureOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Özellik başarıyla eklendi.";
+        public const string CreateFailed = "Özellik eklenirken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Özellik eklenirken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Özellik başarıyla güncellendi.";
+        public const string UpdateFailed = "Özellik güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Özellik güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek özellik bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Özellik başarıyla silindi.";
+        public const string DeleteFailed = "Özellik silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Özellik silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek özellik bulunamadı.";
+
+        // Query (Get) Messages
+        public const string GetSuccess = "Özellik başarıyla getirildi.";
+        public const string GetNotFound = "Özellik bulunamadı.";
+        public const string GetAllSuccess = "Özellikler başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz özellik kaydı bulunmamaktadır.";
+    }
+
+    public static class FooterAdressOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Footer adres başarıyla eklendi.";
+        public const string CreateFailed = "Footer adres eklenirken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Footer adres eklenirken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Footer adres başarıyla güncellendi.";
+        public const string UpdateFailed = "Footer adres güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Footer adres güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek footer adres bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Footer adres başarıyla silindi.";
+        public const string DeleteFailed = "Footer adres silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Footer adres silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek footer adres bulunamadı.";
+
+        // Query (Get) Messages
+        public const string GetSuccess = "Footer adres başarıyla getirildi.";
+        public const string GetNotFound = "Footer adres bulunamadı.";
+        public const string GetAllSuccess = "Footer adresler başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz footer adres kaydı bulunmamaktadır.";
+    }
 }

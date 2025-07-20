@@ -144,4 +144,19 @@ public static class ValidationMessages
         public const string NameAlreadyExists = "Bu kategori adı zaten kullanımda.";
         public const string InvalidId = "Geçerli bir kategori ID'si girilmelidir.";
     }
+
+    public static class FeatureValidationMessages
+    {
+        public const string IdRequired = "Id alanı boş olamaz";
+        public const string NameRequired = "Özellik adı zorunludur.";
+    }
+
+    public static class FooterAdressValidationMessages
+    {
+        public const string IdRequired = "Id alanı boş olamaz";
+        public const string DescriptionRequired = "Açıklama alanı zorunludur.";
+        public const string AdressRequired = "Adres alanı zorunludur.";
+        public const string PhoneRequired = "Telefon alanı zorunludur.";
+        public const string EmailRequired = "Email alanı zorunludur.";
+    }
 }
