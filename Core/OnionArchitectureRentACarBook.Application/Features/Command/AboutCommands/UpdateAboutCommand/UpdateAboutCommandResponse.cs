@@ -4,5 +4,5 @@ namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutComman
 
 public class UpdateAboutCommandResponse 
 {
-    public Result Result { get; set; } 
+    public Result Result { get; set; } = null!;
 }

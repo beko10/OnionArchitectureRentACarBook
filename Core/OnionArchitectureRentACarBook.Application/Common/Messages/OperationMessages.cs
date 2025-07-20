@@ -188,4 +188,30 @@ public static class OperationMessages
         public const string CategoryInUse = "Bu kategori kullanımda olduğu için silinemez.";
         public const string CategoryHasRelatedRecords = "Bu kategoriye bağlı kayıtlar bulunduğu için silinemez.";
     }
+
+    public static class ContactOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "İletişim kaydı başarıyla oluşturuldu.";
+        public const string CreateFailed = "İletişim kaydı oluşturulurken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "İletişim kaydı oluşturulurken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "İletişim kaydı başarıyla güncellendi.";
+        public const string UpdateFailed = "İletişim kaydı güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "İletişim kaydı güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek iletişim kaydı bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "İletişim kaydı başarıyla silindi.";
+        public const string DeleteFailed = "İletişim kaydı silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "İletişim kaydı silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek iletişim kaydı bulunamadı.";
+
+        // Query (Get) Messages
+        public const string GetSuccess = "İletişim kaydı başarıyla getirildi.";
+        public const string GetNotFound = "İletişim kaydı bulunamadı.";
+        public const string GetAllSuccess = "İletişim kayıtları başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz iletişim kaydı bulunmamaktadır.";
+    }
 }

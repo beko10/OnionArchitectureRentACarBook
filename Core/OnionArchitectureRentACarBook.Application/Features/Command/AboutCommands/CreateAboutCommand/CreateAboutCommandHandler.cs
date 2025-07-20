@@ -5,6 +5,7 @@ using OnionArchitectureRentACarBook.Application.Common.Messages;
 using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
 using OnionArchitectureRentACarBook.Application.Repositories.AboutRepository;
 using OnionArchitectureRentACarBook.Application.UnitOfWork;
+using OnionArchitectureRentACarBook.Application.Utilities.Results;
 using OnionArchitectureRentACarBook.Domain.Entities;
 
 namespace OnionArchitectureRentACarBook.Application.Features.Command.AboutCommands.CreateAboutCommand;
@@ -32,7 +33,7 @@ public class CreateAboutCommandHandler : IRequestHandler<CreateAboutCommandReque
         var aboutDto = _mapper.Map<CreateAboutCommandDto>(addedAboutMapping);
         return new CreateAboutCommandResponse
         {
-            Result = ResultData<CreateAboutCommandDto>.Success(aboutDto, OperationMessages.AboutOperationMessages.CreateSuccess)
+            Result = Result.Success(OperationMessages.AboutOperationMessages.CreateSuccess)
         };
     }
 }
