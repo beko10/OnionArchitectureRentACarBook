@@ -318,4 +318,30 @@ public static class OperationMessages
         public const string GetAllSuccess = "Lokasyonlar başarıyla getirildi.";
         public const string GetAllEmpty = "Henüz lokasyon kaydı bulunmamaktadır.";
     }
+
+    public static class ServiceOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Servis başarıyla eklendi.";
+        public const string CreateFailed = "Servis eklenirken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Servis eklenirken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Servis başarıyla güncellendi.";
+        public const string UpdateFailed = "Servis güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Servis güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek servis bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Servis başarıyla silindi.";
+        public const string DeleteFailed = "Servis silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Servis silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek servis bulunamadı.";
+
+        // Query (Get) Messages
+        public const string GetSuccess = "Servis başarıyla getirildi.";
+        public const string GetNotFound = "Servis bulunamadı.";
+        public const string GetAllSuccess = "Servisler başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz servis kaydı bulunmamaktadır.";
+    }
 }

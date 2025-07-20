@@ -171,4 +171,12 @@ public static class ValidationMessages
         public const string IdRequired = "Id alanı boş olamaz";
         public const string NameRequired = "Lokasyon adı zorunludur.";
     }
+
+    public static class ServiceValidationMessages
+    {
+        public const string IdRequired = "Id alanı boş olamaz";
+        public const string TitleRequired = "Başlık alanı zorunludur.";
+        public const string DescriptionRequired = "Açıklama alanı zorunludur.";
+        public const string IconUrlRequired = "IconUrl alanı zorunludur.";
+    }
 }
