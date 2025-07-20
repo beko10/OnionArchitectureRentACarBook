@@ -344,4 +344,30 @@ public static class OperationMessages
         public const string GetAllSuccess = "Servisler başarıyla getirildi.";
         public const string GetAllEmpty = "Henüz servis kaydı bulunmamaktadır.";
     }
+
+    public static class SocialMediaOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Sosyal medya kaydı başarıyla eklendi.";
+        public const string CreateFailed = "Sosyal medya kaydı eklenirken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Sosyal medya kaydı eklenirken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Sosyal medya kaydı başarıyla güncellendi.";
+        public const string UpdateFailed = "Sosyal medya kaydı güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Sosyal medya kaydı güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek sosyal medya kaydı bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Sosyal medya kaydı başarıyla silindi.";
+        public const string DeleteFailed = "Sosyal medya kaydı silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Sosyal medya kaydı silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek sosyal medya kaydı bulunamadı.";
+
+        // Query (Get) Messages
+        public const string GetSuccess = "Sosyal medya kaydı başarıyla getirildi.";
+        public const string GetNotFound = "Sosyal medya kaydı bulunamadı.";
+        public const string GetAllSuccess = "Sosyal medya kayıtları başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz sosyal medya kaydı bulunmamaktadır.";
+    }
 }

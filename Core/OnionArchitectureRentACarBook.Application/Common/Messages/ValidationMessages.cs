@@ -179,4 +179,12 @@ public static class ValidationMessages
         public const string DescriptionRequired = "Açıklama alanı zorunludur.";
         public const string IconUrlRequired = "IconUrl alanı zorunludur.";
     }
+
+    public static class SocialMediaValidationMessages
+    {
+        public const string IdRequired = "Id alanı boş olamaz";
+        public const string NameRequired = "Ad alanı zorunludur.";
+        public const string UrlRequired = "Url alanı zorunludur.";
+        public const string IconRequired = "Icon alanı zorunludur.";
+    }
 }
