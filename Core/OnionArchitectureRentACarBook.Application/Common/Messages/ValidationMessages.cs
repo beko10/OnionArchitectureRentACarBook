@@ -187,4 +187,13 @@ public static class ValidationMessages
         public const string UrlRequired = "Url alanı zorunludur.";
         public const string IconRequired = "Icon alanı zorunludur.";
     }
+
+    public static class TestimonialValidationMessages
+    {
+        public const string IdRequired = "Id alanı boş olamaz";
+        public const string NameRequired = "Ad alanı zorunludur.";
+        public const string TitleRequired = "Başlık alanı zorunludur.";
+        public const string CommentRequired = "Yorum alanı zorunludur.";
+        public const string ImageUrlRequired = "Görsel alanı zorunludur.";
+    }
 }

@@ -370,4 +370,30 @@ public static class OperationMessages
         public const string GetAllSuccess = "Sosyal medya kayıtları başarıyla getirildi.";
         public const string GetAllEmpty = "Henüz sosyal medya kaydı bulunmamaktadır.";
     }
+
+    public static class TestimonialOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Referans başarıyla eklendi.";
+        public const string CreateFailed = "Referans eklenirken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Referans eklenirken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Referans başarıyla güncellendi.";
+        public const string UpdateFailed = "Referans güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Referans güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek referans bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Referans başarıyla silindi.";
+        public const string DeleteFailed = "Referans silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Referans silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek referans bulunamadı.";
+
+        // Query (Get) Messages
+        public const string GetSuccess = "Referans başarıyla getirildi.";
+        public const string GetNotFound = "Referans bulunamadı.";
+        public const string GetAllSuccess = "Referanslar başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz referans kaydı bulunmamaktadır.";
+    }
 }
