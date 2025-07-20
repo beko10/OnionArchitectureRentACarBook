@@ -1,13 +1,13 @@
 using FluentValidation;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.AboutDtos;
+using OnionArchitectureRentACarBook.Application.Features.Command.AboutCommands.DeleteAboutCommand;
 
 
 namespace OnionArchitectureRentACarBook.Application.Common.Validators.AboutValidator;
 
-public class DeleteAboutDtoValidator : AbstractValidator<DeleteAboutCommandDto>
+public class DeleteAboutCommandRequestValidator : AbstractValidator<DeleteAboutCommandRequest>
 {
-    public DeleteAboutDtoValidator()
+    public DeleteAboutCommandRequestValidator()
     {
         RuleFor(x => x.Id)
             .NotEmpty()

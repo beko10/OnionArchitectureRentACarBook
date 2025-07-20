@@ -1,12 +1,12 @@
 ﻿using FluentValidation;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.CategoryDtos;
+using OnionArchitectureRentACarBook.Application.Features.Command.CategoryCommands.DeleteCategoryCommand;
 
 namespace OnionArchitectureRentACarBook.Application.Common.Validators.CategoryValidator;
 
-public class DeleteCategoryCommandDtoValidator : AbstractValidator<DeleteCategoryCommandDto>
+public class DeleteCategoryCommandRequestValidator : AbstractValidator<DeleteCategoryCommandRequest>
 {
-    public DeleteCategoryCommandDtoValidator()
+    public DeleteCategoryCommandRequestValidator()
     {
         RuleFor(x => x.Id)
             .NotEmpty()

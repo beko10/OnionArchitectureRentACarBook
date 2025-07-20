@@ -29,7 +29,7 @@ public class DeleteCarFeatureCommandHandler : IRequestHandler<DeleteCarFeatureCo
         {
             return new DeleteCarFeatureCommandResponse
             {
-                Result = Result.Failure(OperationMessages.CarFeatureOperationMessages.GetNotFound)
+                Result = Result.Failure(OperationMessages.CarFeatureOperationMessages.DeleteNotFound)
             };
         }
 

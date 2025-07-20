@@ -30,7 +30,7 @@ public class DeleteCarPricingCommandHandler : IRequestHandler<DeleteCarPricingCo
         {
             return new DeleteCarPricingCommandResponse
             {
-                Result = Result.Failure(OperationMessages.CarPricingOperationMessages.GetNotFound)
+                Result = Result.Failure(OperationMessages.CarPricingOperationMessages.DeleteNotFound)
             };
         }
 

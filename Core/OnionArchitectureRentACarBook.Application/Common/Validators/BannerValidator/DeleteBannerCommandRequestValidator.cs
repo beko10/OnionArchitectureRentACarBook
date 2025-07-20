@@ -1,13 +1,13 @@
 using FluentValidation;
 using OnionArchitectureRentACarBook.Application.Common.Messages;
-using OnionArchitectureRentACarBook.Application.DTOs.BrandDtos;
+using OnionArchitectureRentACarBook.Application.Features.Command.BannerCommands.DeleteBannerCommand;
 
 
 namespace OnionArchitectureRentACarBook.Application.Common.Validators.BannerValidator
 {
-    public class DeleteBannerCommandDtoValidator : AbstractValidator<DeleteBrandCommandDto>
+    public class DeleteBannerCommandRequestValidator : AbstractValidator<DeleteBannerCommandRequest>
     {
-        public DeleteBannerCommandDtoValidator()
+        public DeleteBannerCommandRequestValidator()
         {
             RuleFor(x => x.Id)
                 .NotEmpty().WithMessage(ValidationMessages.BannerValidationMessages.IdRequired);
