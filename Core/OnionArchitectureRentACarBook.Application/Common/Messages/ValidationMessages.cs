@@ -159,4 +159,10 @@ public static class ValidationMessages
         public const string PhoneRequired = "Telefon alanı zorunludur.";
         public const string EmailRequired = "Email alanı zorunludur.";
     }
+
+    public static class LocationValidationMessages
+    {
+        public const string IdRequired = "Id alanı boş olamaz";
+        public const string NameRequired = "Lokasyon adı zorunludur.";
+    }
 }

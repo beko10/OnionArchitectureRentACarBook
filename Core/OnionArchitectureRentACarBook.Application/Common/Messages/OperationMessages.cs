@@ -266,4 +266,30 @@ public static class OperationMessages
         public const string GetAllSuccess = "Footer adresler başarıyla getirildi.";
         public const string GetAllEmpty = "Henüz footer adres kaydı bulunmamaktadır.";
     }
+
+    public static class LocationOperationMessages
+    {
+        // Create Messages
+        public const string CreateSuccess = "Lokasyon başarıyla eklendi.";
+        public const string CreateFailed = "Lokasyon eklenirken bir hata oluştu.";
+        public const string CreateFailedWithDetail = "Lokasyon eklenirken hata: {0}";
+
+        // Update Messages
+        public const string UpdateSuccess = "Lokasyon başarıyla güncellendi.";
+        public const string UpdateFailed = "Lokasyon güncellenirken bir hata oluştu.";
+        public const string UpdateFailedWithDetail = "Lokasyon güncellenirken hata: {0}";
+        public const string UpdateNotFound = "Güncellenecek lokasyon bulunamadı.";
+
+        // Delete Messages
+        public const string DeleteSuccess = "Lokasyon başarıyla silindi.";
+        public const string DeleteFailed = "Lokasyon silinirken bir hata oluştu.";
+        public const string DeleteFailedWithDetail = "Lokasyon silinirken hata: {0}";
+        public const string DeleteNotFound = "Silinecek lokasyon bulunamadı.";
+
+        // Query (Get) Messages
+        public const string GetSuccess = "Lokasyon başarıyla getirildi.";
+        public const string GetNotFound = "Lokasyon bulunamadı.";
+        public const string GetAllSuccess = "Lokasyonlar başarıyla getirildi.";
+        public const string GetAllEmpty = "Henüz lokasyon kaydı bulunmamaktadır.";
+    }
 }
